@@ -1,0 +1,5 @@
+{{ if eq .chezmoi.os "darwin" }}
+{{ .chezmoi.homeDir }}/Desktop/source/helix/runtime
+{{ else if eq .chezmoi.os "linux" -}}
+{{ .chezmoi.homeDir }}/source/helix/runtime
+{{- end }}

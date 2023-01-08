@@ -1,0 +1,6 @@
+{{ if eq .chezmoi.os "darwin" -}}
+.config/sublime-text/Packages/User
+{{ else if eq .chezmoi.os "linux" -}}
+.zshrc
+Library/Application\ Support/Sublime\ Text/Packages/User/
+{{- end }}

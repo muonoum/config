@@ -1,0 +1,154 @@
+%YAML 1.2
+---
+name: Gleam
+file_extensions:
+  - gleam
+scope: source.gleam
+
+variables:
+  identifier_continue: '[[a-z0-9]_]'
+  identifier: '[a-z]{{identifier_continue}}*'
+
+contexts:
+  main:
+    - match: '#'
+      scope: punctuation.separator
+
+    - match: '\b_{{identifier}}\b'
+      scope: comment.discard_variable.gleam
+
+    - match: '\bpub\b'
+      scope: storage.modifier.gleam
+    - match: '\bexternal\b'
+      scope: storage.modifier.gleam
+
+    - match: '\b\w+:'
+      scope: entity.name.tag
+
+    - match: \bfn\b
+      scope: keyword.other.gleam
+
+    - match: \buse\b
+      scope: keyword.other.gleam
+
+    - match: '"'
+      scope: punctuation.definition.string.begin.gleam
+      push: double_quoted_string
+
+    - match: '//'
+      scope: comment.line.gleam
+      push: line_comment
+
+    - match: '\btodo\b'
+      scope: keyword.other.todo.gleam
+
+    - match: ^\b(import)\s+
+      captures:
+        1: keyword.other.gleam
+      push:
+        - meta_scope: meta.import.gleam
+        - match: '$'
+          pop: true
+        - match: '/'
+          scope: punctuation.separator
+        - match: '\bas\b'
+          scope: keyword.import.gleam
+        - match: \b[a-z][a-z_]*\b
+          scope: entity.name.tag
+        - match: '\.{'
+          scope: punctuation.separator
+          push:
+            - match: 'as'
+              scope: keyword.import.gleam
+            - match: ','
+              scope: punctuation.separator
+            - include: type_name
+            - include: name
+            - match: '}'
+              scope: punctuation.separator
+              pop: true
+
+    - match: \b(case|let|assert|try|type|pub|opaque|external|fn|const)\s+
+      scope: keyword.other.gleam
+
+    - match: \b(if)\s+
+      scope: keyword.control.conditional.gleam
+
+    - match: '\b[0-9][0-9_]*\.([0-9]*)?\b'
+      scope: constant.numeric.float.gleam
+
+    - match: '(\b([0-9][0-9_]*)\b)'
+      scope: constant.numeric.int.gleam
+
+    - match: '\b0[xX][0-9a-fA-F][0-9a-fA-F_]*\b'
+      scope: constant.numeric.integer.hex.gleam
+
+    - match: '\b0[oO][0-7][0-7_]*\b'
+      scope: constant.numeric.integer.octal.gleam
+
+    - match: '\b0[bB][01][01_]*\b'
+      scope: constant.numeric.integer.binary.gleam
+
+    # - match: '([a-z][a-z0-9_]*)(\()'
+    #   captures:
+    #     1: entity.name.function.gleam
+    #     2: support.function.delimiter.gleam
+    # - include: operator_fn
+
+    - match: ','
+      scope: punctuation.separator.gleam
+
+
+    - match: '->'
+      scope: keyword.other.arrow.gleam
+
+    - match: '>>'
+      scope: support.function.delimiter.gleam
+    - match: '|>'
+      scope: keyword.other.pipe.gleam
+
+    - match: '({{identifier}})(\.)'
+      captures:
+        1: entity.name.class.gleam
+        2: punctuation.accessor.gleam
+
+    - match: '[\[\]\{\}()]|<<|>>'
+      scope: support.function.delimiter.gleam
+
+    - match: '<>'
+      scope: punctuation.storage
+
+    - match: '[+\-/\\*=.<>:&|^?%!]+'
+      scope: keyword.operator.gleam
+
+    - match: '[_]'
+      scope: punctuation.separator
+
+    - include: type_name
+    - include: name
+    - include: discard_name
+
+  type_name:
+    - match: '\b[A-Z]\w*\b'
+      scope: entity.name.type
+
+  name:
+    - match: '\b{{identifier}}\b'
+      scope: variable.other.gleam
+
+  discard_name:
+    - match: '\b_{{identifier}}\b'
+      scope: comment.discard_variable.gleam
+
+  double_quoted_string:
+    - meta_scope: string.quoted.double.gleam
+    - match: '\\.'
+      scope: constant.character.escape.gleam
+    - match: '"'
+      scope: punctuation.definition.string.end.gleam
+      pop: true
+
+  line_comment:
+    - meta_scope: comment.line.gleam
+    - match: $
+      pop: true

@@ -1,0 +1,18 @@
+{
+  "scope": "source.gleam",
+  "completions": [
+    "as",
+    "assert",
+    "case",
+    "const",
+    "external",
+    "gleam",
+    "import",
+    "let",
+    "opaque",
+    "pub",
+    "todo",
+    "try",
+    "type",
+  ]
+}

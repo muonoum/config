@@ -1,0 +1,4 @@
+[[language]]
+name = "gleam"
+formatter = { command = "gleam", args = ["format", "--stdin"]}
+auto-format = true

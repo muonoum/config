@@ -1,0 +1,90 @@
+{
+  "variables": {
+    "foreground": "#b9b5a5",
+    "background": "#081014",
+    "color1": "#6097a8",
+    "color2": "#bf6584",
+    "color3": "#499e9e",
+    "color4": "#C38383",
+    "color5": "#c76b6d",
+    "color6": "#BD839F",
+  },
+  "globals": {
+    "foreground": "var(foreground)",
+    "background": "var(background)",
+    "selection": "color(var(color2) alpha(0.25))",
+    "caret": "var(color2)",
+    "line_highlight": "color(var(color3) alpha(0.05))",
+    "invisibles": "color(var(foreground) alpha(0.35))",
+  },
+  "rules":
+  [
+    { "scope": "comment", "foreground": "color(var(foreground) alpha(0.7))", "font_style": "italic" },
+    { "scope": "punctuation", "foreground": "slategrey", },
+    { "scope": "punctuation.section", "foreground": "slategrey" },
+    { "scope": "support.function.delimiter", "foreground": "slategrey" },
+    { "scope": "keyword", "foreground": "var(color1)" },
+    { "scope": "entity.name.tag", "foreground": "var(color6)" },
+    { "scope": "entity.name.tag.extensible", "foreground": "var(color2)" },
+    { "scope": "entity.name.lookup", "foreground": "var(color2)" },
+    { "scope": "entity.name.lookup.namespace", "foreground": "var(color4)" },
+    { "scope": "entity.name.namespace", "foreground": "var(color4)" },
+    { "scope": "entity.name.type", "foreground": "var(color5)" },
+    { "scope": "entity.name.struct", "foreground": "var(color4)" },
+    { "scope": "entity.name.trait", "foreground": "var(color4)" },
+    { "scope": "entity.name.enum", "foreground": "var(color4)" },
+    { "scope": "entity.name.class", "foreground": "var(color2)" },
+    { "scope": "entity.name.function.constructor", "foreground": "var(color2)" },
+    { "scope": "storage.modifier", "foreground": "slategrey", "font_style": "italic" },
+    { "scope": "string", "foreground": "var(color3)" },
+    { "scope": "constant", "foreground": "var(color3)" },
+    { "scope": "constant.character.escape", "foreground": "slategrey" },
+
+    // GO
+    { "scope": "variable.other.go", "foreground": "var(color4)" },
+    { "scope": "meta.function.declaration.go storage.type.go", "foreground": "var(color5)" },
+    { "scope": "storage.type.go", "foreground": "var(color5)" },
+
+    // RUST
+    { "scope": "meta.path.rust", "foreground": "var(color2)" },
+    { "scope": "storage.modifier.lifetime", "foreground": "var(color2)" },
+
+    // YAML
+    { "scope": "meta.mapping.key string", "foreground": "var(color2)", "font_style": "" },
+    { "scope": "string.unquoted", "foreground": "rosybrown" },
+    { "scope": "meta.mapping.key string.unquoted", "foreground": "var(color2)" },
+    { "scope": "constant.language.boolean", "foreground": "var(color5)" },
+    { "scope": "constant.numeric", "foreground": "var(color3)" },
+    { "scope": "entity.other.document.begin", "foreground": "slategray" },
+
+    // ELIXIR
+    { "scope": "entity.other.inherited-class", "foreground": "var(color4)" },
+
+    // TOML
+    { "scope": "entity.name.table", "foreground": "var(color4))", },
+    { "scope": "punctuation.definition.table", "foreground": "var(color4))" },
+    { "scope": "constant.language", "foreground": "var(color4))" },
+
+    // VIM
+    { "scope": "neovintageous_search_inc", "foreground": "var(foreground))", "background": "color(gold alpha(0.25))" },
+    { "scope": "neovintageous_search_cur", "foreground": "var(background))", "background": "color(gold alpha(0.75))" },
+    { "scope": "neovintageous_search_occ", "foreground": "var(foreground))", "background": "color(rosybrown alpha(0.25))" },
+
+    // DIFF
+    { "scope": "diff.fill", "background": "hsla(210, 15%, 30%, 0.1)" },
+
+    // DIFF.DELETED
+    { "scope": "diff.deleted", "background": "color(#eb7a8d l(+ 10%))" },
+    { "scope": "diff.deleted.side-by-side", "background": "color(#eb7a8d l(+ 10%))" },
+    { "scope": "diff.deleted.char", "background": "color(#eb7a8d l(+ 20%))" },
+
+    // DIFF.INSERTED
+    { "scope": "diff.inserted", "background": "#96d9ad" },
+    { "scope": "diff.inserted.side-by-side", "background": "#96d9ad" },
+    { "scope": "diff.inserted.char", "background": "color(#96d9ad l(+ 15%))" },
+    { "scope": "diff.inserted.merge-left", "background": "black" },
+    { "scope": "diff.inserted.merge-right", "background": "black" },
+    { "scope": "diff.inserted.char.merge-left", "background": "black" },
+    { "scope": "diff.inserted.char.merge-right", "background": "black" },
+  ]
+}

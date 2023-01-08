@@ -1,0 +1,36 @@
+format = """
+$username\
+$hostname\
+$directory\
+$shlvl\
+$kubernetes\
+$git_branch\
+$status
+"""
+
+add_newline = false
+
+[username]
+format = "[$user]($style) "
+
+[hostname]
+format = "[$hostname]($style) "
+
+[directory]
+style = "bold #a66062"
+truncation_length = 2
+
+[directory.substitutions]
+"~" = "alex"
+
+[shlvl]
+disabled = false
+format = "[ʌ](bold fg:#b57614) "
+threshold = 4
+
+[git_branch]
+format = "[$symbol](bold #9D245E)[$branch(:$remote_branch)](bold #864062) "
+symbol = "μ-"
+
+[kubernetes]
+format = '[$context](fg:#475a5c) '

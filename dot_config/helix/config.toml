@@ -1,0 +1,54 @@
+theme = "muon"
+
+[editor]
+auto-pairs = false
+bufferline = "always"
+gutters = ["diff", "diagnostics"]
+scrolloff = 2
+cursorline = false
+cursorcolumn = false
+mouse = false
+
+[editor.indent-guides]
+render = false
+
+[editor.whitespace.render]
+newline = "none"
+space = "none"
+tab = "none"
+
+[editor.whitespace.characters]
+nbsp = "-"
+newline = "╖"
+space = "-"
+tab = "-"
+tabpad = "-"
+
+[editor.lsp]
+
+[editor.statusline]
+left = ["mode", "separator", "file-name", "spinner"]
+center = ["primary-selection-length"]
+right = ["position-percentage", "spacer", "separator", 
+  "position", "separator", "selections", "spacer"]
+
+[editor.cursor-shape]
+insert = "block"
+normal = "block"
+select = "block"
+
+[keys.normal]
+# i = ["insert_mode", "collapse_selection"]
+# a = ["append_mode", "collapse_selection"]
+C-o = ":config-open"
+C-r = ":config-reload"
+"{" = ["goto_prev_paragraph", "collapse_selection"]
+"}" = ["goto_next_paragraph", "collapse_selection"]
+
+[keys.select]
+"{" = ["extend_to_line_bounds", "goto_prev_paragraph"]
+"}" = ["extend_to_line_bounds", "goto_next_paragraph"]
+"ret" = ["collapse_selection", "normal_mode"]
+
+[keys.insert]
+"ret" = ["normal_mode"]

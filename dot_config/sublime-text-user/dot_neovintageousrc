@@ -1,0 +1,7 @@
+let mapleader=,
+nnoremap <leader>rc :Neovintageous action=open_rc_file<CR>
+noremap <C-s> :w<CR>
+noremap <space> :noh<CR>
+nnoremap <leader>sp vip:sort u<CR>
+nnoremap <leader>si vii:sort u<CR>
+vnoremap <leader>s :sort u<CR>

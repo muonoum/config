@@ -1,0 +1,24 @@
+prefix_path() {
+  export PATH=$1:$PATH
+}
+
+setopt interactive_comments
+bindkey -e
+
+alias gum-filter='gum filter --prompt="# " --indicator="+" --placeholder=""'
+alias k=kubecolor
+
+source "$HOME/.cargo/env"
+source $(brew --prefix asdf)/libexec/asdf.sh
+
+eval "$(starship init zsh)"
+
+export GOPATH=$HOME/.local/share/go
+export XDG_CONFIG_HOME=$HOME/.config
+export KUBECONFIG=admin.kubeconfig
+export EDITOR=hx
+export ERL_AFLAGS='-kernel shell_history enabled'
+
+prefix_path $(go env GOPATH)/bin
+prefix_path $HOME/.local/bin
+prefix_path $HOME/Library

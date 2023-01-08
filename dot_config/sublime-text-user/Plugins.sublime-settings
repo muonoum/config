@@ -1,0 +1,17 @@
+{
+  "gren": {
+    "format_command": "/Users/alex/.local/bin/gren",
+    "format_enabled": false,
+  },
+  "elm": {
+    "format_command": "/usr/local/bin/elm-format",
+    "format_enabled": true,
+  },
+  "go": {
+    "format_command": "/Users/alex/.local/share/go/bin/goimports",
+  },
+  "gleam": {
+    "format_command": "/usr/local/bin/gleam",
+  },
+  "rustfmt_command": "/Users/alex/.cargo/bin/rustfmt",
+}

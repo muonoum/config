@@ -1,0 +1,25 @@
+[user]
+name = Alexander Stensrud
+email = {{ .email }}
+
+[core]
+ignorecase = false
+excludesfile = ~/.gitignore
+
+{{ if eq .chezmoi.os "darwin" -}}
+[user]
+signingkey = {{ onepasswordRead "op://Personal/SSH/public key" }}
+
+[gpg]
+format = ssh
+
+[gpg "ssh"]
+program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+allowedSignersFile = ~/.config/allowed-signers
+
+[commit]
+gpgsign = true
+{{- end }}
+
+[init]
+defaultBranch = main

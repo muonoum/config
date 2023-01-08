@@ -1,0 +1,46 @@
+[
+  {
+    "keys": ["ctrl+0"],
+    "command": "switch_color_scheme",
+  },
+  {
+    "keys": ["enter"],
+    "command": "nv_enter_normal_mode",
+    "args": {"mode": "mode_insert"},
+    "context": [
+      {"key": "vi_insert_mode_aware"},
+      {
+        "key": "auto_complete_visible",
+        "operator": "equal",
+        "operand": false
+      }
+    ]
+  },
+  {
+    "keys": ["ctrl+j"],
+    "command": "focus_neighboring_group",
+    "args": {"forward": "true"},
+    "context": [{"key": "vi_command_mode_aware"}]
+  },
+  {
+    "keys": ["ctrl+k"],
+    "command": "focus_neighboring_group",
+    "args": {"forward": "false"},
+    "context": [{"key": "vi_command_mode_aware"}]
+  },
+  {
+    "keys": ["ctrl+j"],
+    "command": "insert_snippet",
+    "args": {"contents": "\n"},
+    "context": [{"key": "vi_insert_mode_aware"}]
+  },
+  {
+    "keys": ["ctrl+n"],
+    "command": "auto_complete",
+    "context": [{
+      "key": "auto_complete_visible",
+      "operator": "equal",
+      "operand": false
+    }]
+  },
+]

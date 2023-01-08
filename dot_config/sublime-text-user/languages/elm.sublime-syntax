@@ -1,0 +1,266 @@
+%YAML 1.2
+---
+name: Elm
+file_extensions: [elm]
+scope: source.elm
+version: 2
+
+variables:
+  upper: '\p{Upper}'
+  lower: '\p{Lower}'
+  alnum: '\p{Alnum}'
+  space: '\p{Space}'
+  alpha: '\p{Alpha}'
+  digit: '\p{Digit}'
+  number: '\b{{digit}}+(\.{{digit}}+)?\b'
+  ident: '\b{{lower}}{{alnum}}*\b'
+  type: '\b{{upper}}{{alnum}}*\b'
+  module: '\b{{upper}}{{alnum}}*\b'
+  function: '\b{{lower}}{{alnum}}*\b'
+  tag: '\b{{lower}}{{alnum}}*\b'
+
+contexts:
+  prototype:
+    - include: comment
+    - include: numbers
+    - include: equality
+    - include: string
+    - include: keywords
+
+  main:
+    - include: common
+
+  common:
+    - match: '<\?>'
+      scope: keyword.operator
+    - match: '_{{lower}}{{alnum}}*'
+      scope: comment.discard
+    - include: brackets
+    - include: parens
+    - include: module_lookup
+    - include: struct_lookup
+    - include: braces
+    - include: module
+    - include: import
+    - include: exposing
+    - include: type
+    - include: constructor_name
+    - include: type_signature
+    - include: anonymous_function
+    - include: pipes
+    - include: arrows
+    - include: separators
+    - include: operators
+
+  module_name: [{ match: '{{module}}', scope: entity.name.namespace }]
+  type_name: [{ match: '{{type}}', scope: entity.name.type }]
+  constructor_name: [{ match: '{{type}}', scope: entity.name.function.constructor }]
+  function_name: [{ match: '{{function}}', scope: entity.name.function }]
+  extensible_tag: [{ match: '(?<=[{,|]){{space}}*({{ident}})(?={{space}}*\|)',
+    captures: { 1: entity.name.tag.extensible } }]
+  struct_tag: [{ match: '(?<=[{,|]){{space}}*({{ident}})\b',
+    captures: { 1: entity.name.tag } }]
+  module_lookup: [{ match: '\b{{type}}(?=\.)\b', scope: entity.name.lookup.namespace }]
+  struct_lookup: [{ match: '\b{{ident}}(?=\.)\b', scope: entity.name.lookup }]
+  module_reference_type: [{ match: '(?=\.){{type}}\b', scope: entity.name.type }]
+  module_reference_constructor: [{ match: '(?=\.){{type}}\b',
+    scope: entity.name.function.constructor }]
+  type_constructor: [{ match: '(?<=[=|]){{space}}*({{type}})',
+    captures: { 1: entity.name.function.constructor } }]
+  parens: [{ match: '[()]', scope: punctuation.section }]
+  brackets: [{ match: '[\[\]]', scope: punctuation.separator }]
+  separators:
+    - { match: '\|(?={{space}})', scope: punctuation.separator }
+    - { match: '[=,.:_]', scope: punctuation.separator }
+    - { match: '&&|\|\|', scope: punctuation.separator }
+  numbers: [{ match: '{{number}}', scope: constant.numeric }]
+  equality: [{ match: '==|/=', scope: keyword.operator.equality }]
+
+  pipes:
+    - { match: '[|>]>|<[<|]', scope: keyword.operator.pipe }
+
+  arrows:
+    - { match: '->|<-', scope: keyword.operator.arrow }
+
+  operators:
+    # - { match: '[|>]>|<[<|]', scope: keyword.operator.pipe }
+    # - { match: '->|<-', scope: keyword.operator.arrow }
+    - { match: '[<->/+*]', scope: keyword.operator }
+
+  keywords:
+    - match: '\b(case|of|let|in|if|then|else|port|not|flip)\b'
+      scope: keyword
+
+  comment:
+    - match: '--'
+      scope: comment.line
+      push:
+        - { meta_scope: xyz.comment }
+        - { meta_scope: comment.line }
+        - { match: '$', pop: true }
+
+  string:
+    - match: '"'
+      scope: punctuation.definition.string.begin
+      push:
+        - meta_scope: string.quoted.double
+
+        - match: '(\\)(.)'
+          captures:
+            1: punctuation.separator
+            2: constant.character.escape
+
+        - match: '"'
+          scope: punctuation.definition.string.end
+          pop: true
+
+  module:
+    - match: '\b(?:(effect|port)\s+)?(module)\b'
+      captures: { 1: storage.modifier, 2: keyword }
+      set:
+        - meta_scope: scope.module
+
+        - include: separators
+        - include: module_name
+        - include: exposing
+
+  import:
+    - match: '\b(import)\b'
+      scope: keyword
+      set:
+        - meta_scope: scope.import
+
+        - include: module_name
+        - include: exposing
+
+        - match: '\b(as)\b'
+          scope: keyword
+
+        - match: '$'
+          pop: true
+
+  exposing:
+    - match: '\b(exposing)\b'
+      scope: keyword
+      set: exposed
+
+  exposed:
+    - include: separators
+
+    - match: '\('
+      scope: punctuation.section.parens.begin
+      pop: true
+      push:
+        - meta_scope: scope.exposed
+
+        - include: type_name
+        - include: function_name
+        - include: exposed
+
+        - match: '\)'
+          scope: punctuation.section.parens.end
+          pop: true
+
+  type:
+    - match: '\b(type)\b'
+      scope: keyword.declaration.type
+      push:
+        - meta_scope: scope.type
+
+        - include: module_lookup
+        - include: brackets
+        - include: parens
+        - include: type_braces
+        - include: type_name
+        - include: type_constructor
+        - include: common
+
+        - match: '\b(alias)\b'
+          scope: storage.modifier
+
+        - match: '^{{space}}+({{type}})'
+          captures: { 1: entity.name.function.constructor }
+
+        - match: ^{{space}}*$
+          pop: true
+
+  type_braces:
+    - match: '{'
+      scope: punctuation.section.block.begin
+      push:
+        - meta_scope: scope.type_braces
+
+        - include: type_braces
+        - include: struct_tag
+        - include: module_reference_type
+        - include: module_lookup
+        - include: type_name
+
+        - match: '[|:]'
+          scope: keyword.operator
+        - match: '[,:|()]'
+          scope: punctuation.separator
+
+        - match: '}'
+          scope: punctuation.section.block.end
+          pop: true
+
+  braces:
+    - match: '{'
+      scope: punctuation.section.block.begin
+      push:
+        - meta_scope: scope.braces
+
+        - match: '_{{lower}}{{alnum}}*'
+          scope: comment.discard
+
+        - include: common
+        - include: braces
+        - include: parens
+        - include: brackets
+        - include: extensible_tag
+        - include: struct_tag
+        - include: module_lookup
+        - include: module_reference_type
+
+        - match: '[,:]'
+          scope: punctuation.separator
+
+        - match: '\b{{upper}}{{alnum}}*\b'
+          scope: entity.name.function.constructor
+
+        - match: '}'
+          scope: punctuation.section.block.end
+          pop: true
+
+  type_signature:
+    - match: '^({{function}})\s+(:)\s+'
+      captures: { 1: entity.name.function, 2: punctuation.separator }
+      push:
+        - meta_scope: scope.type_signature
+
+        - include: module_lookup
+        - include: type_name
+        - include: braces
+        - include: parens
+        - include: common
+
+        - match: '^(?={{alnum}})'
+          pop: true
+
+        - match: '^{{space}}*$'
+          pop: true
+
+  anonymous_function:
+    - match: '(\\)(?=[^{{space}}])'
+      captures: { 1: punctuation.separator }
+      push:
+        - meta_scope: scope.anonymous_function
+
+        - match: '->'
+          scope: keyword.operator.arrow.function
+          pop: true
+
+        - include: common
+
+
