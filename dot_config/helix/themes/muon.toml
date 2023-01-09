@@ -15,10 +15,10 @@
 
 "ui.cursorline.primary" = { bg = "gray83" }
 "ui.cursorline.secondary" = { bg = "#e1dfd9" }
-"ui.bufferline" = { fg = "gray60", bg = "foreground" }
-"ui.bufferline.active" = { fg = "background", bg = "foreground" }
+"ui.bufferline" = { fg = "foreground3", bg = "foreground" }
+"ui.bufferline.active" = { fg = "foreground", bg = "#b8b5ae" }
 "ui.statusline" = { fg = "foreground", bg = "#b8b5ae" }
-"ui.statusline.inactive" = { fg = "gray60", bg = "foreground" }
+"ui.statusline.inactive" = { fg = "foreground3", bg = "foreground" }
 "ui.statusline.separator" = { fg = "gray50" }
 
 "comment" = { fg = "gray30", modifiers = [] }
@@ -43,7 +43,11 @@
 "diff.delta" = { fg = "color2" }
 
 [palette]
+foreground0 = "#0b050b"
 foreground = "#2b252b"
+foreground1 = "#4b454b"
+foreground2 = "#6b656b"
+foreground3 = "#aba5ab"
 background = "#e1dfd9"
 color1 = "#105a90"
 color22 = "#d4c9ce"
