@@ -16,7 +16,7 @@
 "ui.cursorline.primary" = { bg = "gray83" }
 "ui.cursorline.secondary" = { bg = "#e1dfd9" }
 "ui.bufferline" = { fg = "foreground3", bg = "foreground" }
-"ui.bufferline.active" = { fg = "foreground", bg = "#b8b5ae" }
+"ui.bufferline.active" = { fg = "foreground", bg = "#b8b5ae", modifiers = ["bold"] }
 "ui.statusline" = { fg = "foreground", bg = "#b8b5ae" }
 "ui.statusline.inactive" = { fg = "foreground3", bg = "foreground" }
 "ui.statusline.separator" = { fg = "gray50" }
