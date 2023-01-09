@@ -1,4 +1,4 @@
 {{ if eq .chezmoi.os "darwin" -}}
-alex@yuki.no {{ onepasswordRead "op://Personal/SSH/public key" }} alex@yuki.no
+{{ .email }} {{ onepasswordRead "op://Personal/SSH/public key" }} {{ .email }}
 {{- end }}
 
