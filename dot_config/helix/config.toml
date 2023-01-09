@@ -10,7 +10,9 @@ cursorcolumn = false
 mouse = false
 
 [editor.indent-guides]
-render = false
+render = true
+character = "┊"
+skip-levels = 1
 
 [editor.whitespace.render]
 newline = "none"
