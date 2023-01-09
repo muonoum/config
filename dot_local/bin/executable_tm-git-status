@@ -16,9 +16,13 @@ grep -q "^ M" <<< "$status" && flags="${flags}m"
 grep -q "^??" <<< "$status" && flags="${flags}?"
 grep -q "ahead" <<< "$all" && flags="${flags}'"
 grep -q "behind" <<< "$all" && flags="${flags},"
-flags="#[$flags_style]$flags#[default]"
+if [ -n "$flags" ]; then
+  flags="#[$flags_style] $flags #[default]"
+fi
 
 branch=$(git rev-parse --abbrev-ref HEAD)
-branch="#[$branch_style]$branch#[default]"
+if [ -n "$branch" ]; then
+  branch="#[$branch_style] $branch #[default]"
+fi
 
-echo "$branch $flags"
+echo "$branch$flags"
