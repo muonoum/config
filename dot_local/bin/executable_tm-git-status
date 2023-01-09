@@ -1,6 +1,6 @@
 #!/bin/bash
 set -u
-branch_style=$2 ;  flags_style=$1 
+branch_style=$2 ;  flags_style=$1
 
 flags=""
 
