@@ -29,10 +29,9 @@ tabpad = "-"
 [editor.lsp]
 
 [editor.statusline]
-left = ["mode", "separator", "file-name", "spinner"]
-center = ["primary-selection-length"]
-right = ["position-percentage", "spacer", "separator", 
-  "position", "separator", "selections", "spacer"]
+left = ["mode", "spacer", "file-name", "spinner"]
+center = ["primary-selection-length", "spacer", "selections"]
+right = ["position-percentage", "spacer",  "position", "spacer"]
 
 [editor.cursor-shape]
 insert = "block"
