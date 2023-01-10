@@ -8,6 +8,7 @@ scrolloff = 2
 cursorline = false
 cursorcolumn = false
 mouse = false
+color-modes = true
 
 [editor.indent-guides]
 render = true

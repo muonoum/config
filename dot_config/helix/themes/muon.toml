@@ -20,6 +20,8 @@
 "ui.statusline" = { fg = "foreground", bg = "#b8b5ae" }
 "ui.statusline.inactive" = { fg = "foreground3", bg = "foreground" }
 "ui.statusline.separator" = { fg = "gray50" }
+"ui.statusline.insert" = { fg = "background", bg = "color2" }
+"ui.statusline.select" = { fg = "background", bg = "color1" }
 
 "comment" = { fg = "gray30", modifiers = [] }
 "constant" = { fg = "foreground" }
