@@ -38,9 +38,9 @@
 "variable" = { fg = "foreground" }
 "variable.parameter" = { fg = "color6" }
 
-"diff.plus" = { fg = "color3" }
+"diff.plus" = { fg = "#008262" }
 "diff.minus" = { fg = "color5" }
-"diff.delta" = { fg = "color2" }
+"diff.delta" = { fg = "#827C00" }
 
 [palette]
 foreground0 = "#0b050b"

@@ -3,7 +3,7 @@ theme = "muon"
 [editor]
 auto-pairs = false
 bufferline = "always"
-gutters = ["diff", "diagnostics"]
+gutters = ["diff"]
 scrolloff = 2
 cursorline = false
 cursorcolumn = false
@@ -17,14 +17,14 @@ skip-levels = 1
 
 [editor.whitespace.render]
 newline = "none"
-space = "none"
-tab = "none"
+space = "all"
+tab = "all"
 
 [editor.whitespace.characters]
 nbsp = "-"
 newline = "╖"
 space = "-"
-tab = "-"
+tab = ">"
 tabpad = "-"
 
 [editor.lsp]
