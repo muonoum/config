@@ -30,7 +30,7 @@ tabpad = "-"
 [editor.lsp]
 
 [editor.statusline]
-left = ["mode", "spacer", "file-name", "spinner"]
+left = ["mode", "spacer", "file-name", "diagnostics", "spinner"]
 center = ["primary-selection-length", "spacer", "selections"]
 right = ["position-percentage", "spacer",  "position", "spacer"]
 
