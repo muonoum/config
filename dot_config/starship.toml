@@ -26,7 +26,7 @@ truncation_length = 2
 [shlvl]
 disabled = false
 format = "[ʌ](bold fg:#b57614) "
-threshold = 4
+threshold = 3
 
 [git_branch]
 format = "[$symbol](bold #9D245E)[$branch(:$remote_branch)](bold #864062) "
