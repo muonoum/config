@@ -2,23 +2,28 @@ prefix_path() {
   export PATH=$1:$PATH
 }
 
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
 setopt interactive_comments
 bindkey -e
 
 alias gum-filter='gum filter --prompt="# " --indicator="+" --placeholder=""'
 alias k=kubecolor
 
-source "$HOME/.cargo/env"
-source $(brew --prefix asdf)/libexec/asdf.sh
-
-eval "$(starship init zsh)"
-
-export GOPATH=$HOME/.local/share/go
-export XDG_CONFIG_HOME=$HOME/.config
-export KUBECONFIG=admin.kubeconfig
 export EDITOR=hx
 export ERL_AFLAGS='-kernel shell_history enabled'
+export GOPATH=$HOME/.local/share/go
+export KUBECONFIG=admin.kubeconfig
+export XDG_CONFIG_HOME=$HOME/.config
 
 prefix_path $(go env GOPATH)/bin
 prefix_path $HOME/.local/bin
-prefix_path $HOME/Library
+
+source "$HOME/.ghcup/env"
+source "$HOME/.cargo/env"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(starship init zsh)"
+
+
+
