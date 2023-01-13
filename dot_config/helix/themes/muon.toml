@@ -1,4 +1,4 @@
-"ui.window" = { fg = "gray70", bg = "#b8b5ae" }
+"ui.window" = { fg = "gray55", bg = "#b8b5ae" }
 "ui.background" = { fg = "foreground", bg = "background" }
 "ui.virtual" = { fg = "slate_gray" }
 
