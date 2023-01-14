@@ -1,5 +1,6 @@
 if status is-interactive
-  set fish_greeting
+  fish_config theme choose "Tomorrow Night Bright"
+  set --global fish_greeting
 
   set --export EDITOR hx
   set --export ERL_AFLAGS '-kernel shell_history enabled'
@@ -7,8 +8,8 @@ if status is-interactive
   set --export KUBECONFIG admin.kubeconfig
   set --export XDG_CONFIG_HOME $HOME/.config
 
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-  eval "$(starship init fish)"
+  eval (/opt/homebrew/bin/brew shellenv)
+  eval (starship init fish)
 
   alias gum-filter 'gum filter --prompt="# " --indicator="+" --placeholder=""'
   alias k kubecolor
