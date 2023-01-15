@@ -19,8 +19,10 @@ export XDG_CONFIG_HOME=$HOME/.config
 
 source "$HOME/.ghcup/env"
 source "$HOME/.cargo/env"
+source $HOME/.config/broot/launcher/bash/br
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(starship init zsh)"
 
 prefix_path $(go env GOPATH)/bin
 prefix_path $HOME/.local/bin
+

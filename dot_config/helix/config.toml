@@ -11,14 +11,14 @@ mouse = false
 color-modes = true
 
 [editor.indent-guides]
-render = false
+render = true
 character = "┊"
-skip-levels = 1
+skip-levels = 0
 
 [editor.whitespace.render]
 newline = "none"
-space = "all"
-tab = "all"
+space = "none"
+tab = "none"
 
 [editor.whitespace.characters]
 nbsp = "-"
@@ -46,6 +46,7 @@ C-o = ":config-open"
 C-r = ":config-reload"
 "{" = ["goto_prev_paragraph", "collapse_selection"]
 "}" = ["goto_next_paragraph", "collapse_selection"]
+"\\" = { s = ":pipe sort -u" }
 
 [keys.select]
 "{" = ["extend_to_line_bounds", "goto_prev_paragraph"]

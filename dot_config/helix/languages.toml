@@ -1,4 +1,14 @@
 [[language]]
 name = "gleam"
-formatter = { command = "gleam", args = ["format", "--stdin"]}
+formatter = { command = "gleam", args = ["format", "--stdin"] }
 auto-format = true
+
+[[language]]
+name = "gren"
+scope = "source.gren"
+roots = ["gren.json"]
+file-types = ["gren"]
+comment-token = "--"
+indent = { tab-width = 4, unit = "    " }
+formatter = { command = "gren", args = ["format", "--stdin"] }
+auto-format = false

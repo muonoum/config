@@ -4,7 +4,7 @@
 
 "ui.selection" =  { bg = "gray80" }
 "ui.cursor.match" = { fg = "background", bg = "slate_gray" }
-"ui.cursor.primary" = { fg = "background", bg = "dark_slate_gray" }
+"ui.cursor.primary" = { fg = "background", bg = "dark_slate_gray", modifiers = ["bold"] }
 "ui.cursor.select" = { fg = "background", bg = "color7" }
 "ui.cursor.insert" = { fg = "background", bg = "color6" }
 
@@ -23,7 +23,7 @@
 "ui.statusline.insert" = { fg = "background", bg = "color1" }
 "ui.statusline.select" = { fg = "background", bg = "color2" }
 
-"comment" = { fg = "gray30", modifiers = [] }
+"comment" = { fg = "gray35", modifiers = ["italic"] }
 "constant" = { fg = "foreground" }
 "constant.numeric" = { fg = "color3" }
 "constructor" = { fg = "color6" }
@@ -39,6 +39,7 @@
 "ui.virtual.whitespace" = { fg = "#bfb8bd" }
 "variable" = { fg = "foreground" }
 "variable.parameter" = { fg = "color6" }
+# "visibility_modifier" = { fg = "dark_slate_gray", modifiers = ["italic"] }
 
 "diff.plus" = { fg = "#008262" }
 "diff.minus" = { fg = "color5" }
