@@ -3,7 +3,7 @@ theme = "muon"
 [editor]
 auto-pairs = false
 bufferline = "always"
-gutters = ["diff"]
+gutters = ["spacer"]
 scrolloff = 2
 cursorline = false
 cursorcolumn = false
@@ -46,7 +46,7 @@ C-o = ":config-open"
 C-r = ":config-reload"
 "{" = ["goto_prev_paragraph", "collapse_selection"]
 "}" = ["goto_next_paragraph", "collapse_selection"]
-"\\" = { s = ":pipe sort -u" }
+"\\" = {  s = ":pipe sort -u", m = ":theme muon", n = ":theme tau" }
 
 [keys.select]
 "{" = ["extend_to_line_bounds", "goto_prev_paragraph"]
