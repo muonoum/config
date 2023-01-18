@@ -2,7 +2,7 @@
 "ui.background" = { fg = "foreground", bg = "background" }
 "ui.virtual" = { fg = "slate_gray" }
 
-"ui.selection" =  { bg = "#271F25" }
+"ui.selection" =  { bg = "#372f35" }
 "ui.cursor.match" = { fg = "background", bg = "dark_slate_gray" }
 "ui.cursor.primary" = { fg = "background", bg = "slate_gray", modifiers = [] }
 "ui.cursor.select" = { fg = "background", bg = "color7" }
