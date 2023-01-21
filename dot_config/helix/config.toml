@@ -40,13 +40,17 @@ normal = "block"
 select = "block"
 
 [keys.normal]
-# i = ["insert_mode", "collapse_selection"]
-# a = ["append_mode", "collapse_selection"]
-C-o = ":config-open"
-C-r = ":config-reload"
 "{" = ["goto_prev_paragraph", "collapse_selection"]
 "}" = ["goto_next_paragraph", "collapse_selection"]
-"\\" = {  s = ":pipe sort -u", "," = ":theme muon", "." = ":theme tau" }
+
+[keys.normal."\\"]
+q = ":bc"
+0 = ":bco"
+r = ":config-reload"
+o = ":config-open"
+s = ":pipe sort -u"
+"," = ":theme muon"
+"." = ":theme tau"
 
 [keys.select]
 "{" = ["extend_to_line_bounds", "goto_prev_paragraph"]
