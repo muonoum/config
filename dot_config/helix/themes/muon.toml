@@ -2,28 +2,28 @@
 "ui.background" = { fg = "foreground", bg = "background" }
 "ui.virtual" = { fg = "slate_gray" }
 
-"ui.selection" =  { bg = "gray80" }
+"ui.selection" =  { bg = "#c8bebe" }
+"ui.cursor.primary" = { fg = "background", bg = "dark_slate_gray" }
 "ui.cursor.match" = { fg = "background", bg = "slate_gray" }
-"ui.cursor.primary" = { fg = "background", bg = "dark_slate_gray", modifiers = [] }
 "ui.cursor.select" = { fg = "background", bg = "color7" }
 "ui.cursor.insert" = { fg = "background", bg = "color6" }
 
 "ui.menu" = { fg = "background", bg = "foreground" }
-"ui.menu.selected" = { bg = "color2"}
+"ui.menu.selected" = { bg = "color2" }
 "ui.popup" = { fg = "background", bg = "foreground" }
 "ui.help" = { fg = "background", bg = "foreground" }
 
 "ui.cursorline.primary" = { bg = "gray83" }
 "ui.cursorline.secondary" = { bg = "#e1dfd9" }
-"ui.bufferline" = { fg = "foreground2", bg = "#b8b5ae" }
-"ui.bufferline.active" = { bg = "#b8b5ae", fg = "foreground", modifiers = [] }
-"ui.statusline" = { fg = "foreground", bg = "#b8b5ae" }
+"ui.bufferline" = { fg = "foreground2", bg = "#BCB5B3" }
+"ui.bufferline.active" = { fg = "foreground", bg = "#BCB5B3" }
+"ui.statusline" = { fg = "foreground", bg = "#BCB5B3" }
 "ui.statusline.inactive" = { fg = "foreground3", bg = "foreground" }
 "ui.statusline.separator" = { fg = "gray50" }
 "ui.statusline.insert" = { fg = "background", bg = "color1" }
 "ui.statusline.select" = { fg = "background", bg = "color2" }
 
-"comment" = { fg = "gray35", modifiers = ["italic"] }
+"comment" = { fg = "#887e7e", modifiers = ["italic"] }
 "constant" = { fg = "foreground" }
 "constant.numeric" = { fg = "color3" }
 "constructor" = { fg = "color6" }
@@ -31,15 +31,14 @@
 "keyword" = { fg = "color1" }
 "label" = { fg = "color1" }
 "namespace" = { fg = "color2" }
-"operator" = { fg = "slate_gray", modifiers = [] }
+"operator" = { fg = "slate_gray" }
 "punctuation" = { fg = "slate_gray" }
-"string" = { fg = "color3", modifiers = [] }
+"string" = { fg = "color3" }
 "type" = { fg = "color5" }
 "ui.virtual.indent-guide" = { fg = "#bfb8bd" }
 "ui.virtual.whitespace" = { fg = "#bfb8bd" }
 "variable" = { fg = "foreground" }
 "variable.parameter" = { fg = "color6" }
-# "visibility_modifier" = { fg = "dark_slate_gray", modifiers = ["italic"] }
 
 "diff.plus" = { fg = "#008262" }
 "diff.minus" = { fg = "color5" }
@@ -51,12 +50,12 @@ foreground = "#2b252b"
 foreground1 = "#4b454b"
 foreground2 = "#6b656b"
 foreground3 = "#aba5ab"
-background = "#e1dfd9"
+# background = "#e1dfd9"
+background = "#dddad8"
 color1 = "#105a90"
 color22 = "#d4c9ce"
 color2 = "#9D245E"
-color3 = "#005A83"
-color4 = "#005A83"
+color3 = "#0E6478"
 color5 = "#800000"
 color6 = "#864062"
 color7 = "#95767E"

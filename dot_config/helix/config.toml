@@ -4,7 +4,7 @@ theme = "muon"
 auto-pairs = false
 bufferline = "always"
 gutters = ["spacer"]
-scrolloff = 2
+scrolloff = 4
 cursorline = false
 cursorcolumn = false
 mouse = false
@@ -52,6 +52,23 @@ s = ":pipe sort -u"
 "," = ":theme muon"
 "." = ":theme tau"
 
+[keys.normal."\\".t]
+"l" = ":theme muon"
+"d" = ":theme tau"
+
+[keys.normal."\\".c]
+r = ":config-reload"
+o = ":config-open"
+
+[keys.normal."\\".b]
+q = ":bc"
+o = ":bco"
+a = ":bca"
+
+[keys.normal."\\"."\\"]
+q = ":theme muon"
+w = ":theme tau"
+
 [keys.select]
 "{" = ["extend_to_line_bounds", "goto_prev_paragraph"]
 "}" = ["extend_to_line_bounds", "goto_next_paragraph"]
@@ -59,3 +76,5 @@ s = ":pipe sort -u"
 
 [keys.insert]
 "ret" = ["normal_mode"]
+
+
