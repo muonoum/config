@@ -1,6 +1,7 @@
 "ui.window" = { fg = "gray55", bg = "#b8b5ae" }
 "ui.background" = { fg = "foreground", bg = "background" }
 "ui.virtual" = { fg = "slate_gray" }
+"diagnostic" = { bg = "#c8bebe" }
 
 "ui.selection" =  { bg = "#c8bebe" }
 "ui.cursor.primary" = { fg = "background", bg = "dark_slate_gray" }
@@ -23,7 +24,7 @@
 "ui.statusline.insert" = { fg = "background", bg = "color1" }
 "ui.statusline.select" = { fg = "background", bg = "color2" }
 
-"comment" = { fg = "#887e7e", modifiers = ["italic"] }
+"comment" = { fg = "#786e6e", modifiers = ["italic"] }
 "constant" = { fg = "foreground" }
 "constant.numeric" = { fg = "color3" }
 "constructor" = { fg = "color6" }
