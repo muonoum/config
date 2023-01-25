@@ -3,9 +3,12 @@
 "ui.virtual" = { fg = "slate_gray" }
 "diagnostic" = { bg = "#c8bebe" }
 
-"ui.selection" =  { bg = "#c8bebe" }
-"ui.cursor.primary" = { fg = "background", bg = "dark_slate_gray" }
-"ui.cursor.match" = { fg = "background", bg = "slate_gray" }
+# "ui.selection" =  { bg = "#b2c7c7" }
+# "ui.cursor.primary" = { fg = "background", bg = "dark_slate_gray" }
+# "ui.cursor.match" = { fg = "background", bg = "slate_gray" }
+"ui.selection" =  { bg = "#c2caca" }
+"ui.cursor.primary" = { bg = "#b8aeae" }
+"ui.cursor.match" = { bg = "#c8bebe" }
 "ui.cursor.select" = { fg = "background", bg = "color7" }
 "ui.cursor.insert" = { fg = "background", bg = "color6" }
 
