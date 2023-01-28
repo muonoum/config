@@ -40,8 +40,16 @@ normal = "block"
 select = "block"
 
 [keys.normal]
-"{" = ["goto_prev_paragraph", "collapse_selection"]
-"}" = ["goto_next_paragraph", "collapse_selection"]
+"{" = ["goto_prev_paragraph"]
+"}" = ["goto_next_paragraph"]
+
+[keys.insert]
+"ret" = ["normal_mode"]
+
+[keys.select]
+"{" = ["extend_to_line_bounds", "goto_prev_paragraph"]
+"}" = ["extend_to_line_bounds", "goto_next_paragraph"]
+"ret" = ["collapse_selection", "normal_mode"]
 
 [keys.normal."\\"]
 q = ":bc"
@@ -68,13 +76,5 @@ a = ":bca"
 [keys.normal."\\"."\\"]
 q = ":theme muon"
 w = ":theme tau"
-
-[keys.select]
-"{" = ["extend_to_line_bounds", "goto_prev_paragraph"]
-"}" = ["extend_to_line_bounds", "goto_next_paragraph"]
-"ret" = ["collapse_selection", "normal_mode"]
-
-[keys.insert]
-"ret" = ["normal_mode"]
 
 

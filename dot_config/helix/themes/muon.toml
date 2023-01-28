@@ -1,14 +1,11 @@
 "ui.window" = { fg = "gray55", bg = "#b8b5ae" }
 "ui.background" = { fg = "foreground", bg = "background" }
 "ui.virtual" = { fg = "slate_gray" }
+"ui.selection" =  { bg = "#cdc0ca" }
 "diagnostic" = { bg = "#c8bebe" }
 
-# "ui.selection" =  { bg = "#b2c7c7" }
-# "ui.cursor.primary" = { fg = "background", bg = "dark_slate_gray" }
-# "ui.cursor.match" = { fg = "background", bg = "slate_gray" }
-"ui.selection" =  { bg = "#c2caca" }
-"ui.cursor.primary" = { bg = "#b8aeae" }
-"ui.cursor.match" = { bg = "#c8bebe" }
+"ui.cursor.primary" = { bg = "#bdb0ba" }
+"ui.cursor.match" = { bg = "#b0babd" }
 "ui.cursor.select" = { fg = "background", bg = "color7" }
 "ui.cursor.insert" = { fg = "background", bg = "color6" }
 
@@ -17,11 +14,10 @@
 "ui.popup" = { fg = "background", bg = "foreground" }
 "ui.help" = { fg = "background", bg = "foreground" }
 
-"ui.cursorline.primary" = { bg = "gray83" }
-"ui.cursorline.secondary" = { bg = "#e1dfd9" }
-"ui.bufferline" = { fg = "foreground2", bg = "#BCB5B3" }
-"ui.bufferline.active" = { fg = "foreground", bg = "#BCB5B3" }
-"ui.statusline" = { fg = "foreground", bg = "#BCB5B3" }
+"ui.bufferline" = { fg = "foreground2", bg = "#bcb5b3" }
+"ui.bufferline.active" = { fg = "foreground", bg = "#bcb5b3" }
+
+"ui.statusline" = { fg = "foreground", bg = "#bcb5b3" }
 "ui.statusline.inactive" = { fg = "foreground3", bg = "foreground" }
 "ui.statusline.separator" = { fg = "gray50" }
 "ui.statusline.insert" = { fg = "background", bg = "color1" }
