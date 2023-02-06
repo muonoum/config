@@ -2,7 +2,7 @@
 "ui.background" = { fg = "foreground", bg = "background" }
 "ui.virtual" = { fg = "slate_gray" }
 
-"ui.selection" =  { bg = "#372935" }
+"ui.selection" =  { bg = "#271925" }
 "ui.cursor.match" = { bg = "#3B2B38" }
 "ui.cursor.primary" = { bg = "#5E455A" }
 "ui.cursor.select" = { fg = "background", bg = "color7" }
@@ -28,17 +28,19 @@
 "constant.numeric" = { fg = "color3" }
 "constructor" = { fg = "color6" }
 "function" =  { fg ="foreground" }
-"keyword" = { fg = "color1" }
+"keyword" = { fg = "color1", modifiers = [ "bold" ] }
 "label" = { fg = "color1" }
 "namespace" = { fg = "color2" }
 "operator" = { fg = "slate_gray" }
 "punctuation" = { fg = "slate_gray" }
-"string" = { fg = "color3" }
+# "string" = { fg = "color3" }
+"string" = { fg = "#16A9A2" }
 "type" = { fg = "color5" }
-"ui.virtual.indent-guide" = { fg = "#4f484d" }
+"ui.virtual.indent-guide" = { fg = "#3f383d" }
 "ui.virtual.whitespace" = { fg = "#bfb8bd" }
 "variable" = { fg = "foreground" }
 "variable.parameter" = { fg = "color6" }
+"variable.other.member" = { fg = "slate_gray", modifiers = [] }
 
 "diff.plus" = { fg = "#008262" }
 "diff.minus" = { fg = "color5" }

@@ -10,6 +10,10 @@ cursorcolumn = false
 mouse = false
 color-modes = true
 
+[editor.soft-wrap]
+enable = true
+wrap-indicator = "  ➢ "
+
 [editor.indent-guides]
 render = true
 character = "┊"
@@ -28,6 +32,7 @@ tab = ">"
 tabpad = "-"
 
 [editor.lsp]
+auto-signature-help = false
 
 [editor.statusline]
 left = ["mode", "spacer", "file-name", "diagnostics", "spinner"]
@@ -40,8 +45,8 @@ normal = "block"
 select = "block"
 
 [keys.normal]
-"{" = ["goto_prev_paragraph"]
-"}" = ["goto_next_paragraph"]
+"{" = ["goto_prev_paragraph", "align_view_center"]
+"}" = ["goto_next_paragraph", "align_view_center"]
 
 [keys.insert]
 "ret" = ["normal_mode"]
@@ -60,21 +65,5 @@ s = ":pipe sort -u"
 "," = ":theme muon"
 "." = ":theme tau"
 
-[keys.normal."\\".t]
-"l" = ":theme muon"
-"d" = ":theme tau"
-
-[keys.normal."\\".c]
-r = ":config-reload"
-o = ":config-open"
-
-[keys.normal."\\".b]
-q = ":bc"
-o = ":bco"
-a = ":bca"
-
-[keys.normal."\\"."\\"]
-q = ":theme muon"
-w = ":theme tau"
 
 

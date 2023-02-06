@@ -28,7 +28,7 @@
 "constant.numeric" = { fg = "color3" }
 "constructor" = { fg = "color6" }
 "function" =  { fg ="foreground" }
-"keyword" = { fg = "color1" }
+"keyword" = { fg = "color1", modifiers = [ "bold" ] }
 "label" = { fg = "color1" }
 "namespace" = { fg = "color2" }
 "operator" = { fg = "slate_gray" }
@@ -39,6 +39,7 @@
 "ui.virtual.whitespace" = { fg = "#bfb8bd" }
 "variable" = { fg = "foreground" }
 "variable.parameter" = { fg = "color6" }
+"variable.other.member" = { fg = "dark_slate_gray", modifiers = [] }
 
 "diff.plus" = { fg = "#008262" }
 "diff.minus" = { fg = "color5" }
