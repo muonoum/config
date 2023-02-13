@@ -2,27 +2,25 @@
 "ui.virtual" = { fg = "slate_gray" }
 "ui.cursor.select" = { fg = "background", bg = "color7" }
 "ui.cursor.insert" = { fg = "background", bg = "color6" }
-
-"ui.menu.selected" = { fg = "color7", bg = "#2b252b" }
-
 "ui.statusline.separator" = { fg = "gray50" }
 "ui.statusline.insert" = { fg = "background", bg = "color1" }
 "ui.statusline.select" = { fg = "background", bg = "color2" }
 
 "ui.window" = { fg = "gray25", bg = "#2b252b" }
-"ui.selection" =  { bg = "#271925" }
+"ui.selection" =  { bg = "color7d3" }
 "ui.cursor.match" = { bg = "#3b2b38" }
 "ui.cursor.primary" = { bg = "#5e455a" }
 
 "ui.menu" = { fg = "background", bg = "color7" }
+"ui.menu.selected" = { fg = "color7", bg = "#2b252b" }
 "ui.popup" = { fg = "background", bg = "color7" }
 "ui.help" = { fg = "background", bg = "color7" }
 
-"ui.bufferline" = { fg = "foreground2", bg = "#2b252b" }
-"ui.bufferline.active" = { fg = "#b1afa9", bg = "#2b252b" }
+"ui.bufferline" = { fg = "color7d1", bg = "#2b252b" }
+"ui.bufferline.active" = { fg = "color7", bg = "#2b252b" }
 
-"ui.statusline" = { fg = "#b1afa9", bg = "#2b252b" }
-"ui.statusline.inactive" = { fg = "#7b757b", bg = "#1b151b" }
+"ui.statusline" = { fg = "color7", bg = "#2b252b" }
+"ui.statusline.inactive" = { fg = "color7d2", bg = "#1b151b" }
 
 "diff.plus" = { fg = "#008262" }
 "diff.minus" = { fg = "color5" }
@@ -40,7 +38,7 @@
 "variable" = { fg = "foreground" }
 "variable.parameter" = { fg = "color6" }
 
-"diagnostic" = { bg = "#c8bebe" }
+"diagnostic" = { bg = "#271925" }
 "comment" = { fg = "gray35", modifiers = ["italic"] }
 "keyword" = { fg = "color1", modifiers = [ "bold" ] }
 "string" = { fg = "color3" }
@@ -50,18 +48,21 @@
 
 [palette]
 # foreground0 = "#0b050b"
-foreground = "#c1bfb9"
+foreground = "#b1afa9"
 # foreground1 = "#4b454b"
 foreground2 = "#6b656b"
 # foreground3 = "#aba5ab"
 background = "#110b11"
 color1 = "#6097a8"
 color2 = "#bf6584"
-color3 = "#60A89F"
-color4 = "#C38383"
+color3 = "#60a89f"
+color4 = "#c38383"
 color5 = "#c76b6d"
-color6 = "#BD839F"
-color7 = "#95767E"
+color6 = "#bd839f"
+color7 = "#95767e"
+color7d1 = "#75565e"
+color7d2 = "#65464e"
+color7d3 = "#2a1a1f"
 # color22 = "#d4c9ce"
 dark_slate_gray = "#2f4f4f"
 slate_gray = "#708090"

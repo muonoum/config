@@ -12,7 +12,7 @@ color-modes = true
 
 [editor.soft-wrap]
 enable = true
-wrap-indicator = "  ➢ "
+wrap-indicator = "  "
 
 [editor.indent-guides]
 render = true
@@ -35,7 +35,7 @@ tabpad = "-"
 auto-signature-help = false
 
 [editor.statusline]
-left = ["mode", "spacer", "file-name", "diagnostics", "spinner"]
+left = ["mode", "spacer", "file-base-name", "diagnostics", "spinner"]
 center = ["primary-selection-length", "spacer", "selections"]
 right = ["position-percentage", "spacer",  "position", "spacer"]
 

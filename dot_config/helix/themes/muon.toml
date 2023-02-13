@@ -2,7 +2,6 @@
 "ui.virtual" = { fg = "slate_gray" }
 "ui.cursor.select" = { fg = "background", bg = "color7" }
 "ui.cursor.insert" = { fg = "background", bg = "color6" }
-"ui.menu.selected" = { bg = "color2" }
 "ui.statusline.separator" = { fg = "gray50" }
 "ui.statusline.insert" = { fg = "background", bg = "color1" }
 "ui.statusline.select" = { fg = "background", bg = "color2" }
@@ -13,6 +12,7 @@
 "ui.cursor.match" = { bg = "#b0bab1" }
 
 "ui.menu" = { fg = "background", bg = "foreground" }
+"ui.menu.selected" = { bg = "color2" }
 "ui.popup" = { fg = "background", bg = "foreground" }
 "ui.help" = { fg = "background", bg = "foreground" }
 
@@ -38,7 +38,7 @@
 "variable" = { fg = "foreground" }
 "variable.parameter" = { fg = "color6" }
 
-"diagnostic" = { bg = "#c8bebe" }
+"diagnostic" = { bg = "#d79921" }
 "comment" = { fg = "#786e6e", modifiers = ["italic"] }
 "keyword" = { fg = "color1", modifiers = [ "bold" ] }
 "string" = { fg = "color3" }
@@ -55,13 +55,13 @@ foreground3 = "#aba5ab"
 # background = "#e1dfd9"
 background = "#dddad8"
 color1 = "#105a90"
-color22 = "#d4c9ce"
 color2 = "#9D245E"
 color3 = "#126880"
 color4 = "#793B51"
 color5 = "#800000"
 color6 = "#864062"
 color7 = "#95767E"
+# color22 = "#d4c9ce"
 dark_slate_gray = "#2f4f4f"
 slate_gray = "#708090"
 gray0 = "#000000"
