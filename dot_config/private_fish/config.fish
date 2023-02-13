@@ -9,6 +9,9 @@ if status is-interactive
   eval (/opt/homebrew/bin/brew shellenv)
   fish_add_path $(go env GOPATH)/bin
   eval (starship init fish)
+  fish_add_path /opt/homebrew/opt/ruby/bin 
+  fish_add_path /opt/homebrew/lib/ruby/gems/3.2.0/bin/
+  fish_add_path /opt/homebrew/opt/postgresql@15/bin
 
   fish_add_path --prepend $HOME/.local/bin --move
 
