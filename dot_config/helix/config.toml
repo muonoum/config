@@ -7,7 +7,7 @@ gutters = ["spacer"]
 scrolloff = 4
 cursorline = false
 cursorcolumn = false
-mouse = false
+mouse = true
 color-modes = true
 
 [editor.soft-wrap]
