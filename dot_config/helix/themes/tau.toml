@@ -45,6 +45,7 @@
 "ui.virtual.indent-guide" = { fg = "#3f383d" }
 "ui.virtual.whitespace" = { fg = "#bfb8bd" }
 "variable.other.member" = { fg = "color4", modifiers = [] }
+"storage.modifier" = { fg = "slate_gray" }
 
 [palette]
 # foreground0 = "#0b050b"

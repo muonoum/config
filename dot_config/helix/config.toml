@@ -59,6 +59,7 @@ select = "block"
 [keys.normal."\\"]
 q = ":bc"
 0 = ":bco"
+"[" = ":reload"
 r = ":config-reload"
 o = ":config-open"
 s = ":pipe sort -u"

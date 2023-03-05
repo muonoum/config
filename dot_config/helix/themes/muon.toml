@@ -8,6 +8,7 @@
 
 "ui.window" = { fg = "gray55", bg = "#b8b5ae" }
 "ui.selection" =  { bg = "#cdc0ca" }
+# "ui.cursor" = { bg = "#000000" }
 "ui.cursor.primary" = { bg = "#bdb0ba" }
 "ui.cursor.match" = { bg = "#b0bab1" }
 
@@ -45,6 +46,7 @@
 "ui.virtual.indent-guide" = { fg = "#bfb8bd" }
 "ui.virtual.whitespace" = { fg = "#bfb8bd" }
 "variable.other.member" = { fg = "color4", modifiers = [] }
+"storage.modifier" = { fg = "dark_slate_gray" }
 
 [palette]
 # foreground0 = "#0b050b"
