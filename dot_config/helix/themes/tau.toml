@@ -15,6 +15,10 @@
 "ui.menu.selected" = { fg = "color7", bg = "#2b252b" }
 "ui.popup" = { fg = "background", bg = "color7" }
 "ui.help" = { fg = "background", bg = "color7" }
+"warning" = { fg = "dark_slate_gray" }
+"error" = { fg = "dark_slate_gray" }
+"info" = { fg = "dark_slate_gray" }
+"hint" = { fg = "dark_slate_gray" }
 
 "ui.bufferline" = { fg = "color7d1", bg = "#2b252b" }
 "ui.bufferline.active" = { fg = "color7", bg = "#2b252b" }

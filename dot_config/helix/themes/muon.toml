@@ -39,7 +39,6 @@
 "variable" = { fg = "foreground" }
 "variable.parameter" = { fg = "color6" }
 
-"diagnostic" = { bg = "#B6D1D5" }
 "comment" = { fg = "#786e6e", modifiers = [] }
 "keyword" = { fg = "color1", modifiers = [ "bold" ] }
 "string" = { fg = "color3" }
@@ -48,7 +47,14 @@
 "variable.other.member" = { fg = "color4", modifiers = [] }
 "storage.modifier" = { fg = "dark_slate_gray", modifiers = ["bold"] }
 
+"diagnostic" = { bg = "#b6d1d5" }
+"warning" = { fg = "slate_gray" }
+"error" = { fg = "slate_gray" }
+"info" = { fg = "slate_gray" }
+"hint" = { fg = "slate_gray" }
+
 [palette]
+diagnostics = "#b6d1d5"
 # foreground0 = "#0b050b"
 foreground = "#2b252b"
 # foreground1 = "#4b454b"
