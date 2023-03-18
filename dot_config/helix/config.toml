@@ -1,6 +1,7 @@
 theme = "muon"
 
 [editor]
+undercurl = true
 auto-pairs = false
 bufferline = "always"
 gutters = ["spacer"]
@@ -12,7 +13,7 @@ color-modes = true
 
 [editor.soft-wrap]
 enable = true
-wrap-indicator = "  ~ "
+wrap-indicator = " ～ " # "  ~ "
 
 [editor.indent-guides]
 render = true
