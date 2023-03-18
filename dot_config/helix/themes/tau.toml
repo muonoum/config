@@ -38,14 +38,14 @@
 "variable" = { fg = "foreground" }
 "variable.parameter" = { fg = "color6" }
 
-"diagnostic" = { bg = "#271925" }
-"comment" = { fg = "gray35", modifiers = ["italic"] }
+"diagnostic" = { bg = "#062125" }
+"comment" = { fg = "gray35", modifiers = [] }
 "keyword" = { fg = "color1", modifiers = [ "bold" ] }
 "string" = { fg = "color3" }
 "ui.virtual.indent-guide" = { fg = "#3f383d" }
 "ui.virtual.whitespace" = { fg = "#bfb8bd" }
 "variable.other.member" = { fg = "color4", modifiers = [] }
-"storage.modifier" = { fg = "slate_gray" }
+"storage.modifier" = { fg = "slate_gray", modifiers = ["bold"] }
 
 [palette]
 # foreground0 = "#0b050b"
