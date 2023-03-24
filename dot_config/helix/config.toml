@@ -1,7 +1,7 @@
 theme = "muon"
 
 [editor]
-undercurl = true
+# undercurl = true
 auto-pairs = false
 bufferline = "always"
 gutters = ["spacer"]

@@ -14,13 +14,14 @@
 
 "ui.menu" = { fg = "background", bg = "foreground" }
 "ui.menu.selected" = { bg = "color2" }
-"ui.popup" = { fg = "background", bg = "foreground" }
+"ui.popup" = { fg = "foreground", bg = "ui" }
+# "ui.popup" = { fg = "foreground", bg = "#cdcac8" }
 "ui.help" = { fg = "background", bg = "foreground" }
 
-"ui.bufferline" = { fg = "foreground2", bg = "#bcb5b3" }
-"ui.bufferline.active" = { fg = "foreground", bg = "#bcb5b3" }
+"ui.bufferline" = { fg = "foreground2", bg = "ui" }
+"ui.bufferline.active" = { fg = "foreground", bg = "ui" }
 
-"ui.statusline" = { fg = "foreground", bg = "#bcb5b3" }
+"ui.statusline" = { fg = "foreground", bg = "ui" }
 "ui.statusline.inactive" = { fg = "foreground3", bg = "foreground" }
 
 "diff.plus" = { fg = "#008262" }
@@ -54,6 +55,7 @@
 "hint" = { fg = "slate_gray" }
 
 [palette]
+ui = "#bcb5b3"
 diagnostics = "#b6d1d5"
 # foreground0 = "#0b050b"
 foreground = "#2b252b"
