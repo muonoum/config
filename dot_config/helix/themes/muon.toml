@@ -12,9 +12,9 @@
 "ui.cursor.primary" = { bg = "#bdb0ba" }
 "ui.cursor.match" = { bg = "#b0bab1" }
 
-"ui.menu" = { fg = "background", bg = "foreground" }
-"ui.menu.selected" = { bg = "color2" }
-"ui.popup" = { fg = "foreground", bg = "ui" }
+"ui.menu" = { fg = "foreground", bg = "ui" }
+"ui.menu.selected" = { fg = "background", bg = "color2" }
+"ui.popup" = { fg = "foreground", bg = "ui2" }
 # "ui.popup" = { fg = "foreground", bg = "#cdcac8" }
 "ui.help" = { fg = "background", bg = "foreground" }
 
@@ -39,6 +39,9 @@
 "type" = { fg = "color5" }
 "variable" = { fg = "foreground" }
 "variable.parameter" = { fg = "color6" }
+"function.macro" = { fg = "color1" }
+"function.builtin" = { fg = "color1" }
+# "function.method" = { fg = "color2" }
 
 "comment" = { fg = "#786e6e", modifiers = [] }
 "keyword" = { fg = "color1", modifiers = [ "bold" ] }
@@ -47,6 +50,7 @@
 "ui.virtual.whitespace" = { fg = "#bfb8bd" }
 "variable.other.member" = { fg = "color4", modifiers = [] }
 "storage.modifier" = { fg = "dark_slate_gray", modifiers = ["bold"] }
+"constant.builtin.boolean" = { fg = "color3" }
 
 "diagnostic" = { bg = "#b6d1d5" }
 "warning" = { fg = "slate_gray" }
@@ -56,7 +60,8 @@
 
 [palette]
 ui = "#bcb5b3"
-diagnostics = "#b6d1d5"
+ui2 = "#aca5a3"
+diagnostics = "#bcf4f5"
 # foreground0 = "#0b050b"
 foreground = "#2b252b"
 # foreground1 = "#4b454b"

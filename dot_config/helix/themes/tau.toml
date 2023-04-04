@@ -41,6 +41,9 @@
 "type" = { fg = "color5" }
 "variable" = { fg = "foreground" }
 "variable.parameter" = { fg = "color6" }
+"function.macro" = { fg = "color1" }
+"function.builtin" = { fg = "color1" }
+# "function.method" = { fg = "color2" }
 
 "diagnostic" = { bg = "#062125" }
 "comment" = { fg = "gray35", modifiers = [] }
@@ -50,6 +53,7 @@
 "ui.virtual.whitespace" = { fg = "#bfb8bd" }
 "variable.other.member" = { fg = "color4", modifiers = [] }
 "storage.modifier" = { fg = "slate_gray", modifiers = ["bold"] }
+"constant.builtin.boolean" = { fg = "color3" }
 
 [palette]
 # foreground0 = "#0b050b"
