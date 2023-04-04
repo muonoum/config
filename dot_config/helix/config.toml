@@ -34,6 +34,7 @@ tabpad = "-"
 
 [editor.lsp]
 auto-signature-help = false
+display-messages = true
 
 [editor.statusline]
 left = ["mode", "spacer", "file-base-name", "diagnostics", "spinner"]
