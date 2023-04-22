@@ -5,7 +5,7 @@ auto-format = true
 [[grammar]]
 name = "gleam"
 # formatter = { command = "gleam", args = ["format", "--stdin"] }
-source = { git = "https://github.com/gleam-lang/tree-sitter-gleam", rev = "ae79782c00656945db69641378e688cdb78d52c1" }
+source = { git = "https://github.com/gleam-lang/tree-sitter-gleam", rev = "2d5d6b001ba12bf1c7ac94679d69ac2bed3151dc" }
 
 [[language]]
 name = "gren"
@@ -21,7 +21,7 @@ auto-format = false
 name = "go"
 formatter = { command = "goimports" }
 
-# [[language]]
-# name = "elm"
-# formatter = { command = "elm-format", args = ["--stdin"] }
+[[language]]
+name = "elm"
+formatter = { command = "elm-format", args = ["--stdin"] }
 
