@@ -1,7 +1,6 @@
 theme = "muon"
 
 [editor]
-# undercurl = true
 auto-pairs = false
 bufferline = "always"
 gutters = ["spacer"]
@@ -13,7 +12,7 @@ color-modes = true
 
 [editor.soft-wrap]
 enable = true
-wrap-indicator = " ～ " # "  ~ "
+wrap-indicator = " ～ "
 
 [editor.indent-guides]
 render = true
@@ -47,30 +46,28 @@ normal = "block"
 select = "block"
 
 [keys.normal]
-"{" = ["goto_prev_paragraph", "align_view_center"]
-"}" = ["goto_next_paragraph", "align_view_center"]
+"{" = ["goto_prev_paragraph"]
+"}" = ["goto_next_paragraph"]
 I = ["split_selection_on_newline", "insert_at_line_start"]
 A = ["split_selection_on_newline", "insert_at_line_end"]
-# Z = ["keep_primary_selection","collapse_selection"]
+j = ["keep_primary_selection", "move_line_down"]
+k = ["keep_primary_selection", "move_line_up"]
 
 [keys.insert]
-"ret" = ["normal_mode"]
+"ret" = ["keep_primary_selection", "collapse_selection", "normal_mode"]
 
 [keys.select]
 "{" = ["extend_to_line_bounds", "goto_prev_paragraph"]
 "}" = ["extend_to_line_bounds", "goto_next_paragraph"]
-"ret" = ["collapse_selection", "normal_mode"]
-# Z = ["keep_primary_selection","collapse_selection","normal_mode"]
+"ret" = ["keep_primary_selection", "collapse_selection", "normal_mode"]
 
 [keys.normal."\\"]
-q = ":bc"
-0 = ":bco"
-"[" = ":reload"
-r = ":config-reload"
-o = ":config-open"
+a = ":buffer-close-all"
+q = ":buffer-close"
+0 = ":buffer-close-others"
+r = ":reload"
+R = ":config-reload"
+c = ":config-open"
 s = ":pipe sort -u"
-"," = ":theme muon"
-"." = ":theme tau"
-
-
-
+"[" = ":theme muon"
+"]" = ":theme tau"
