@@ -54,17 +54,17 @@ j = ["keep_primary_selection", "move_line_down"]
 k = ["keep_primary_selection", "move_line_up"]
 
 [keys.insert]
-"ret" = ["keep_primary_selection", "collapse_selection", "normal_mode"]
+ret = ["keep_primary_selection", "collapse_selection", "normal_mode"]
 
 [keys.select]
 "{" = ["extend_to_line_bounds", "goto_prev_paragraph"]
 "}" = ["extend_to_line_bounds", "goto_next_paragraph"]
-"ret" = ["keep_primary_selection", "collapse_selection", "normal_mode"]
+ret = ["keep_primary_selection", "collapse_selection", "normal_mode"]
 
-[keys.normal."\\"]
-a = ":buffer-close-all"
+[keys.normal.'\']
+A = ":buffer-close-all"
 q = ":buffer-close"
-0 = ":buffer-close-others"
+O = ":buffer-close-others"
 r = ":reload"
 R = ":config-reload"
 c = ":config-open"
