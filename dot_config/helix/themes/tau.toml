@@ -15,10 +15,10 @@
 "ui.menu.selected" = { fg = "color7", bg = "#2b252b" }
 "ui.popup" = { fg = "background", bg = "color7" }
 "ui.help" = { fg = "background", bg = "color7" }
-"warning" = { fg = "dark_slate_gray" }
-"error" = { fg = "dark_slate_gray" }
-"info" = { fg = "dark_slate_gray" }
-"hint" = { fg = "dark_slate_gray" }
+"warning" = { fg = "slate_gray" }
+"error" = { fg = "slate_gray" }
+"info" = { fg = "slate_gray" }
+"hint" = { fg = "slate_gray" }
 
 "ui.bufferline" = { fg = "color7d1", bg = "#2b252b" }
 "ui.bufferline.active" = { fg = "color7", bg = "#2b252b" }
@@ -46,15 +46,18 @@
 "function.builtin" = { fg = "color1" }
 # "function.method" = { fg = "color2" }
 
+"tag" = { fg = "color1" }
 "diagnostic" = { bg = "#062125" }
-"comment" = { fg = "gray35", modifiers = [] }
+"comment" = { fg = "gray45", modifiers = [ "italic" ] }
 "keyword" = { fg = "color1", modifiers = [ "bold" ] }
-"string" = { fg = "color3" }
+"string" = { fg = "color3", modifiers = [ ] }
 "ui.virtual.indent-guide" = { fg = "#3f383d" }
 "ui.virtual.whitespace" = { fg = "#bfb8bd" }
 "variable.other.member" = { fg = "color4", modifiers = [] }
 "storage.modifier" = { fg = "slate_gray", modifiers = ["bold"] }
 "constant.builtin.boolean" = { fg = "color3" }
+"constant.builtin" = { fg = "color3", modifiers = ["italic"] }
+"string.special.symbol" = { fg = "color3", modifiers = [] }
 
 [palette]
 # foreground0 = "#0b050b"
