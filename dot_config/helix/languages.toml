@@ -2,6 +2,22 @@
 name = "gleam"
 auto-format = true
 
+[[language]]
+name = "erlang"
+auto-format = true
+
+[[language]]
+name = "javascript"
+auto-format = true
+
+[[language]]
+name = "elixir"
+auto-format = true
+
+[[language]]
+name = "heex"
+auto-format = true
+
 [[grammar]]
 name = "gleam"
 # formatter = { command = "gleam", args = ["format", "--stdin"] }
@@ -21,7 +37,7 @@ auto-format = false
 name = "go"
 formatter = { command = "goimports" }
 
-[[language]]
-name = "elm"
-formatter = { command = "elm-format", args = ["--stdin"] }
+# [[language]]
+# name = "elm"
+# formatter = { command = "elm-format", args = ["--stdin"] }
 
