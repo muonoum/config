@@ -33,7 +33,7 @@ tabpad = "-"
 
 [editor.lsp]
 auto-signature-help = false
-display-messages = true
+# display-messages = true
 
 [editor.statusline]
 left = ["mode", "spacer", "file-base-name", "diagnostics", "spinner"]
@@ -71,3 +71,4 @@ c = ":config-open"
 s = ":pipe sort -u"
 "[" = ":theme muon"
 "]" = ":theme tau"
+"." = ":toggle-option file-picker.git-ignore"
