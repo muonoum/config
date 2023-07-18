@@ -13,6 +13,7 @@ if status is-interactive
   fish_add_path /opt/homebrew/opt/ruby/bin 
   fish_add_path /opt/homebrew/lib/ruby/gems/3.2.0/bin/
   fish_add_path /opt/homebrew/opt/postgresql@15/bin
+  fish_add_path /opt/homebrew/opt/node@18/bin
   fish_add_path --prepend $HOME/.local/bin --move
 
   set --export EDITOR hx
@@ -21,10 +22,11 @@ if status is-interactive
   set --export KUBECONFIG admin.kubeconfig
   set --export XDG_CONFIG_HOME $HOME/.config
   set --export HOMEBREW_NO_ANALYTICS 1
-  set --export HOMEBREW_NO_GOOGLE_ANALYTICS 1
 
   alias gf 'gum filter --prompt="# " --indicator="+" --placeholder=""'
   alias k kubecolor
   alias mv 'mv -v'
   alias cp 'cp -v'
+
+  source ~/.asdf/asdf.fish
 end
