@@ -72,3 +72,9 @@ s = ":pipe sort -u"
 "[" = ":theme muon"
 "]" = ":theme tau"
 "." = ":toggle-option file-picker.git-ignore"
+
+[keys.normal.'[']
+"[" = ["goto_prev_function", "align_view_top"]
+
+[keys.normal.']']
+"]" = ["goto_next_function", "flip_selections", "align_view_top"]
