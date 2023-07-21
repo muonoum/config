@@ -56,8 +56,8 @@
 "variable.other.member" = { fg = "color4", modifiers = [] }
 "storage.modifier" = { fg = "slate_gray", modifiers = ["bold"] }
 "constant.builtin.boolean" = { fg = "color3" }
-"constant.builtin" = { fg = "color3", modifiers = ["italic"] }
-"string.special.symbol" = { fg = "color3", modifiers = [] }
+"constant.builtin" = { fg = "color6", modifiers = ["italic"] }
+"string.special.symbol" = { fg = "color6", modifiers = [] }
 
 [palette]
 # foreground0 = "#0b050b"
@@ -68,7 +68,7 @@ foreground2 = "#6b656b"
 background = "#110b11"
 color1 = "#6097a8"
 color2 = "#bf6584"
-color3 = "#60a89f"
+color3 = "#6B9D91"
 color4 = "#c38383"
 color5 = "#c76b6d"
 color6 = "#bd839f"
