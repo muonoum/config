@@ -57,8 +57,8 @@
 "string.special.symbol" = { fg = "color6", modifiers = [] }
 
 "diagnostic" = { bg = "#b6d1d5" }
-"warning" = { fg = "slate_gray" }
-"error" = { fg = "slate_gray" }
+"warning" = { fg = "#a16207" }
+"error" = { fg = "#b91c1c" }
 "info" = { fg = "slate_gray" }
 "hint" = { fg = "slate_gray" }
 
