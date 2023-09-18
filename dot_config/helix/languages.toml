@@ -38,5 +38,10 @@ command = "nextls"
 args = ["--stdio=true"]
 
 [language-server.lexical]
-command = "lexical"
+command = "start_lexical.sh"
 args = ["--stdio=true"]
+
+[[grammar]]
+name = "gleam"
+source = { git = "https://github.com/gleam-lang/tree-sitter-gleam", rev = "297031dce60e07acf90345d62777623469e46027" }
+
