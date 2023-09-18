@@ -7,6 +7,8 @@
 "ui.statusline.select" = { fg = "background", bg = "color2" }
 
 "ui.window" = { fg = "gray25", bg = "#2b252b" }
+"ui.cursorline.primary" = { bg = "#1a1515" }
+"ui.cursorline.secondary" = { bg = "#0d1a28" }
 "ui.selection" =  { bg = "color7d3" }
 "ui.cursor.match" = { bg = "#3b2b38" }
 "ui.cursor.primary" = { bg = "#5e455a" }
@@ -65,7 +67,7 @@ foreground = "#b1afa9"
 # foreground1 = "#4b454b"
 foreground2 = "#6b656b"
 # foreground3 = "#aba5ab"
-background = "#110b11"
+background = "#000000"
 color1 = "#6097a8"
 color2 = "#bf6584"
 color3 = "#6B9D91"

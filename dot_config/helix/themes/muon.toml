@@ -9,6 +9,9 @@
 "ui.window" = { fg = "gray55", bg = "#b8b5ae" }
 "ui.selection" =  { bg = "#cdc0ca" }
 # "ui.cursor" = { bg = "#000000" }
+"ui.cursorline.primary" = { bg = "#d2cfcd" }
+# "ui.cursorline.primary" = { bg = "#d6d3d1" }
+"ui.cursorline.secondary" = { bg = "#bdcac8" }
 "ui.cursor.primary" = { bg = "#bdb0ba" }
 "ui.cursor.match" = { bg = "#b0bab1" }
 
@@ -35,7 +38,7 @@
 "label" = { fg = "color1" }
 "attribute" = { fg = "color4" }
 "namespace" = { fg = "color2" }
-"operator" = { fg = "slate_gray" }
+"operator" = { fg = "slate_gray", modifiers = [""] }
 "punctuation" = { fg = "slate_gray" }
 "type" = { fg = "color5" }
 "variable" = { fg = "foreground" }
@@ -46,14 +49,14 @@
 
 "tag" = { fg = "color1" }
 "comment" = { fg = "#5d6a68", modifiers = [ "italic" ] }
-"keyword" = { fg = "color1", modifiers = [ "bold" ] }
+"keyword" = { fg = "color1", modifiers = [ "" ] }
 "string" = { fg = "color3", modifiers = [ ] }
 "ui.virtual.indent-guide" = { fg = "#bfb8bd" }
 "ui.virtual.whitespace" = { fg = "#bfb8bd" }
-"variable.other.member" = { fg = "color4", modifiers = ["bold"] }
+"variable.other.member" = { fg = "color4", modifiers = [""] }
 "storage.modifier" = { fg = "dark_slate_gray", modifiers = ["bold"] }
 "constant.builtin.boolean" = { fg = "color3" }
-"constant.builtin" = { fg = "color6", modifiers = ["bold", "italic"] }
+"constant.builtin" = { fg = "color4", modifiers = ["bold", ""] }
 "string.special.symbol" = { fg = "color6", modifiers = [] }
 
 "diagnostic" = { bg = "#b6d1d5" }
@@ -71,6 +74,7 @@ foreground = "#2b252b"
 # foreground1 = "#4b454b"
 foreground2 = "#6b656b"
 foreground3 = "#aba5ab"
+foreground4 = "#b6d0d6"
 # background = "#e1dfd9"
 background = "#dddad8"
 color1 = "#105a90"
