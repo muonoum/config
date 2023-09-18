@@ -19,6 +19,7 @@ if status is-interactive
   fish_add_path /opt/homebrew/opt/postgresql@15/bin
   fish_add_path /opt/homebrew/opt/node@18/bin
   fish_add_path /opt/homebrew/opt/make/libexec/gnubin
+  fish_add_path $HOME/.local/share/lexical/bin
   fish_add_path --prepend $HOME/.local/bin --move
 
   set --export EDITOR hx
