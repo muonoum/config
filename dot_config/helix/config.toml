@@ -56,10 +56,12 @@ I = ["split_selection_on_newline", "insert_at_line_start"]
 A = ["split_selection_on_newline", "insert_at_line_end"]
 j = ["keep_primary_selection", "move_line_down"]
 k = ["keep_primary_selection", "move_line_up"]
+"C-l" = ["align_view_top"]
 
 [keys.insert]
 # ret = ["keep_primary_selection", "collapse_selection", "normal_mode"]
 ret = ["normal_mode"]
+"C-l" = ["align_view_top"]
 
 [keys.select]
 "{" = ["extend_to_line_bounds", "goto_prev_paragraph"]
