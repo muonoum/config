@@ -37,7 +37,7 @@
 "function" =  { fg ="foreground" }
 "label" = { fg = "color1" }
 "attribute" = { fg = "color4" }
-"namespace" = { fg = "color2" }
+"namespace" = { fg = "color2", modifiers = [""] }
 "operator" = { fg = "slate_gray", modifiers = [""] }
 "punctuation" = { fg = "slate_gray" }
 "type" = { fg = "color5" }
@@ -56,7 +56,7 @@
 "variable.other.member" = { fg = "color4", modifiers = [""] }
 "storage.modifier" = { fg = "dark_slate_gray", modifiers = ["bold"] }
 "constant.builtin.boolean" = { fg = "color3" }
-"constant.builtin" = { fg = "color4", modifiers = ["bold", ""] }
+"constant.builtin" = { fg = "color4", modifiers = [""] }
 "string.special.symbol" = { fg = "color6", modifiers = [] }
 
 "diagnostic" = { bg = "#b6d1d5" }
