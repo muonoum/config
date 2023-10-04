@@ -34,6 +34,8 @@ if status is-interactive
   alias mv 'mv -v'
   alias cp 'cp -v'
   alias tailscale='/Applications/Tailscale.app/Contents/MacOS/Tailscale'
+  alias gl='git log --graph --pretty=oneline --abbrev-commit'
 
-  source ~/.asdf/asdf.fish
+  #source ~/.asdf/asdf.fish
+  rtx activate fish | source
 end
