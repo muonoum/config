@@ -1,3 +1,6 @@
+[language-server.typescript-language-server]
+config = { format = { "semicolons" = "insert" } }
+
 [[language]]
 name = "erlang"
 auto-format = true
@@ -27,7 +30,7 @@ formatter = { command = "goimports" }
 [[language]]
 name = "elixir"
 auto-format = true
-language-servers = ["lexical"]
+language-servers = ["nextls"]
 
 [language-server.credo]
 command = "credo-language-server"
