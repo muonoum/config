@@ -29,6 +29,10 @@ name = "elixir"
 auto-format = true
 language-servers = ["elixir-ls"]
 
+# [[language]]
+# name = "gleam"
+# language-servers = ["glas"]
+
 [language-server.typescript-language-server]
 config = { format = { "semicolons" = "insert" } }
 
@@ -44,7 +48,12 @@ args = ["--stdio=true"]
 command = "start_lexical.sh"
 args = ["--stdio=true"]
 
+[language-server.glas]
+command = "glas"
+args = ["--stdio"]
+
 [[grammar]]
 name = "gleam"
-source = { git = "https://github.com/gleam-lang/tree-sitter-gleam", rev = "b2afa4fd6bb41a7bf912b034c653c90af7ae5122" }
+source = { git = "https://github.com/gleam-lang/tree-sitter-gleam", rev = "2012f294baacf30e7a62414754021284377366c6" }
+
 
