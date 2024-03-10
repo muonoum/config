@@ -1,0 +1,53 @@
+"ui.background" = { fg = "#2b252b", bg = "#dddad8" }
+"ui.bufferline" = { fg = "#6b656b", bg = "#bcb5b3" }
+"ui.bufferline.active" = { fg = "#2b252b", bg = "#bcb5b3" }
+"ui.cursor" = { bg = "#bdb0ba" }
+"ui.cursor.match" = { bg = "#b0bab1" }
+"ui.cursor.primary" = { bg = "#bdb0ba" }
+"ui.cursorline.primary" = { bg = "#d2cfcd" }
+"ui.cursorline.secondary" = { bg = "#bdcac8" }
+"ui.help" = { fg = "#dddad8", bg = "#2b252b" }
+"ui.menu" = { fg = "#2b252b", bg = "#bcb5b3" }
+"ui.menu.selected" = { fg = "#dddad8", bg = "#2b252b" }
+"ui.popup" = { fg = "#2b252b", bg = "#bcb5b3" }
+"ui.selection" =  { bg = "#cdc0ca" }
+"ui.statusline" = { bg = "#bcb5b3" }
+"ui.statusline.inactive" = { fg = "#aba5ab", bg = "#2b252b" }
+"ui.statusline.insert" = { fg = "#dddad8", bg = "#0a5a6c" }
+"ui.statusline.select" = { fg = "#dddad8", bg = "#904060" }
+"ui.virtual" = { fg = "#2f4f4f" }
+"ui.virtual.indent-guide" = { fg = "#bfb8bd" }
+"ui.virtual.whitespace" = { fg = "#bfb8bd" }
+
+"diff.delta" = { fg = "#827c00" }
+"diff.minus" = { fg = "#800000" }
+"diff.plus" = { fg = "#008262" }
+
+"diagnostic" = { bg = "#b6d1d5" }
+"error" = { fg = "#b91c1c" }
+"hint" = { fg = "slate_gray" }
+"info" = { fg = "slate_gray" }
+"warning" = { fg = "#a16207" }
+
+"attribute" = { fg = "#793b51" }
+"comment" = { fg = "#5d6a68", modifiers = [] }
+"constant.builtin" = { fg = "#793b51", modifiers = [] }
+"constant.builtin.boolean" = { fg = "#126880" }
+"constant.numeric" = { fg = "#126880", modifiers = [] }
+"constructor" = { fg = "#904060" }
+"function.builtin" = { fg = "#0a5a6c" }
+"function.macro" = { fg = "#0a5a6c" }
+"keyword" = { fg = "#0a5a6c" }
+"label" = { fg = "#0a5a6c" }
+"namespace" = { fg = "#904060", modifiers = [] }
+"operator" = { fg = "#708090" }
+"punctuation" = { fg = "#708090" }
+"storage.modifier" = { fg = "#2f4f4f", modifiers = ["bold"] }
+"string" = { fg = "#126880", modifiers = [] }
+"string.special.symbol" = { fg = "#864062" }
+"tag" = { fg = "#0a5a6c" }
+"type" = { fg = "#800000" }
+"variable.other.member" = { fg = "#793b51" }
+"variable.parameter" = { fg = "#864062" }
+
+[palette]

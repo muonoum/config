@@ -48,7 +48,7 @@
 # "function.method" = { fg = "color2" }
 
 "tag" = { fg = "color1" }
-"comment" = { fg = "#5d6a68", modifiers = [ "italic" ] }
+"comment" = { fg = "#5d6a68", modifiers = [ "" ] }
 "keyword" = { fg = "color1", modifiers = [ "" ] }
 "string" = { fg = "color3", modifiers = [ ] }
 "ui.virtual.indent-guide" = { fg = "#bfb8bd" }
