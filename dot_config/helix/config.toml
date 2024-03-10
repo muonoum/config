@@ -75,6 +75,7 @@ ret = ["keep_primary_selection", "collapse_selection", "normal_mode"]
 s = ":pipe sort -u"
 
 [keys.normal.'\']
+w = ":toggle soft-wrap.enable"
 A = ":buffer-close-all"
 q = ":buffer-close"
 O = ":buffer-close-others"
@@ -83,11 +84,13 @@ R = ":config-reload"
 c = ":config-open"
 s = ":pipe sort -u"
 "[" = ":theme muon"
+"{" = ":theme muon2"
 "]" = ":theme tau"
 "." = ":toggle-option file-picker.git-ignore"
 "z" = ":tree-sitter-highlight-name"
 # TODO: Lag en ny submeny for pipes? yq/jq-ting, base64, osv..
 y = ":pipe yq ea '[.]|sort_by(.name)|.[]|splitDoc'"
+# f = ":file-picker-in-current-buffer-directory"
 
 [keys.normal.'[']
 "[" = ["goto_prev_function", "align_view_top"]
