@@ -23,7 +23,8 @@
 "diff.minus" = { fg = "#800000" }
 "diff.plus" = { fg = "#008262" }
 
-"diagnostic" = { bg = "#b6d1d5" }
+# "diagnostic" = { bg = "#b6d1d5" }
+"diagnostic" = { bg = "#c6d1d5" }
 "error" = { fg = "#b91c1c" }
 "hint" = { fg = "slate_gray" }
 "info" = { fg = "slate_gray" }

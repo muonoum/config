@@ -1,10 +1,10 @@
-theme = "muon"
+theme = "muon2"
 
 [editor]
 auto-pairs = false
 bufferline = "always"
 gutters = ["spacer"]
-scrolloff = 2
+scrolloff = 5
 cursorline = false
 cursorcolumn = true
 mouse = true
