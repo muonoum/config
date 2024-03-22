@@ -4,6 +4,7 @@
 "ui.cursor" = { bg = "#bdb0ba" }
 "ui.cursor.match" = { bg = "#b0bab1" }
 "ui.cursor.primary" = { bg = "#bdb0ba" }
+"ui.cursor.primary.insert" = { bg = "#cdb0ba" }
 "ui.cursorline.primary" = { bg = "#d2cfcd" }
 "ui.cursorline.secondary" = { bg = "#bdcac8" }
 "ui.help" = { fg = "#dddad8", bg = "#2b252b" }
