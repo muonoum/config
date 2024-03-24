@@ -19,6 +19,8 @@
 "ui.virtual" = { fg = "#2f4f4f" }
 "ui.virtual.indent-guide" = { fg = "#bfb8bd" }
 "ui.virtual.whitespace" = { fg = "#bfb8bd" }
+"ui.virtual.jump-label" = { fg = "#2f4f4f", bg = "#cdc0ca" }
+"ui.window" = { fg = "#2b252b", bg = "#b8b5ae" }
 
 "diff.delta" = { fg = "#827c00" }
 "diff.minus" = { fg = "#800000" }
@@ -32,19 +34,19 @@
 "warning" = { fg = "#a16207" }
 
 "attribute" = { fg = "#793b51" }
-"comment" = { fg = "#5d6a68", modifiers = [] }
+"comment" = { fg = "#5d6a68", modifiers = ["italic"] }
 "constant.builtin" = { fg = "#793b51", modifiers = [] }
 "constant.builtin.boolean" = { fg = "#126880" }
 "constant.numeric" = { fg = "#126880", modifiers = [] }
 "constructor" = { fg = "#904060" }
 "function.builtin" = { fg = "#0a5a6c" }
 "function.macro" = { fg = "#0a5a6c" }
-"keyword" = { fg = "#0a5a6c" }
+"keyword" = { fg = "#0a5a6c", modifiers = [], underline = { style = "line" } }
 "label" = { fg = "#0a5a6c" }
 "namespace" = { fg = "#904060", modifiers = [] }
-"operator" = { fg = "#708090" }
+"operator" = { fg = "#708090", modifiers = [] }
 "punctuation" = { fg = "#708090" }
-"storage.modifier" = { fg = "#2f4f4f", modifiers = ["bold"] }
+"storage.modifier" = { fg = "#3a3a4c", modifiers = ["bold"], underline = { style = "line" } }
 "string" = { fg = "#126880", modifiers = [] }
 "string.special.symbol" = { fg = "#864062" }
 "tag" = { fg = "#0a5a6c" }
