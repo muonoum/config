@@ -9,6 +9,7 @@ cursorline = false
 cursorcolumn = true
 mouse = true
 color-modes = true
+auto-completion = false
 
 [editor.smart-tab]
 enable = false
