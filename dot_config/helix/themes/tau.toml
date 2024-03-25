@@ -51,12 +51,12 @@
 "tag" = { fg = "color1" }
 "diagnostic" = { bg = "#062125" }
 "comment" = { fg = "gray45", modifiers = [ ] }
-"keyword" = { fg = "color1", modifiers = [ ] }
+"keyword" = { fg = "color1", modifiers = [], underline = { style = "line" }}
 "string" = { fg = "color3", modifiers = [ ] }
 "ui.virtual.indent-guide" = { fg = "#3f383d" }
 "ui.virtual.whitespace" = { fg = "#bfb8bd" }
 "variable.other.member" = { fg = "color4", modifiers = [] }
-"storage.modifier" = { fg = "slate_gray", modifiers = ["bold"] }
+"storage.modifier" = { fg = "slate_gray", modifiers = ["bold"], underline = { style = "line" }}
 "constant.builtin.boolean" = { fg = "color3" }
 "constant.builtin" = { fg = "color6", modifiers = [] }
 "string.special.symbol" = { fg = "color6", modifiers = [] }
