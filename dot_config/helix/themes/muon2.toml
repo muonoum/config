@@ -17,6 +17,7 @@
 "ui.statusline.insert" = { fg = "#dddad8", bg = "#0a5a6c" }
 "ui.statusline.select" = { fg = "#dddad8", bg = "#904060" }
 "ui.virtual" = { fg = "#2f4f4f" }
+"ui.virtual.wrap" = { fg = "#8f888d" }
 "ui.virtual.indent-guide" = { fg = "#bfb8bd" }
 "ui.virtual.whitespace" = { fg = "#bfb8bd" }
 "ui.virtual.jump-label" = { fg = "#2f4f4f", bg = "#cdc0ca" }
