@@ -58,4 +58,4 @@ name = "gleam"
 
 [grammar.source]
 git = "https://github.com/gleam-lang/tree-sitter-gleam"
-rev = "2012f294baacf30e7a62414754021284377366c6"
+rev = "bcf9c45b56cbe46e9dac5eee0aee75df270000ac"
