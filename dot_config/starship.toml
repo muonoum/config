@@ -30,7 +30,7 @@ threshold = 3
 
 [git_branch]
 format = "[$symbol](bold #9D245E)[$branch(:$remote_branch)](bold #864062) "
-symbol = "μ-"
+symbol = ""
 
 [kubernetes]
 format = '[$context](fg:#475a5c) '
