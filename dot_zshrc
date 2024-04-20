@@ -25,4 +25,3 @@ eval "$(starship init zsh)"
 
 prefix_path $(go env GOPATH)/bin
 prefix_path $HOME/.local/bin
-

@@ -1,4 +1,4 @@
-{{ if eq .chezmoi.os "darwin" -}}
+{{ if eq .location "home/macos" -}}
 {{ .email }} {{ onepasswordRead "op://Personal/SSH/public key" }} {{ .email }}
 {{- end }}
 
