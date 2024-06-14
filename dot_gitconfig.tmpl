@@ -5,9 +5,8 @@ email = {{ .email }}
 [core]
 ignorecase = false
 excludesfile = ~/.gitignore
-pager = diff-so-fancy | less --tabs=4 -RFX
 
-{{ if eq .location "home/macos" -}}
+{{ if and (eq .chezmoi.os "darwin") (eq .email "alex@yuki.no") -}}
 [user]
 signingkey = {{ onepasswordRead "op://Personal/SSH/public key" }}
 
@@ -24,9 +23,6 @@ gpgsign = true
 
 [init]
 defaultBranch = main
-
-[interactive]
-diffFilter = diff-so-fancy --patch
 
 [color]
 ui = true
