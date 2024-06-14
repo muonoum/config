@@ -1,6 +1,6 @@
 #!/opt/homebrew/bin/fish
 
-for dir in $HOME/{{ .source }} /*
+for dir in $HOME/{{ .source }}/*
     if string match --quiet '*.skip' $dir
         continue
     end
