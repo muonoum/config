@@ -95,6 +95,9 @@ s = ":pipe sort -u"
 y = ":pipe yq ea '[.]|sort_by(.name)|.[]|splitDoc'"
 # f = ":file-picker-in-current-buffer-directory"
 
+[keys.normal.'\'.'\']
+c = ":toggle-option auto-completion"
+
 [keys.normal.'[']
 "[" = ["goto_prev_function", "align_view_top"]
 
