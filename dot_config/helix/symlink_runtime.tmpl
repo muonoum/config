@@ -1,5 +1,1 @@
-{{ if eq .location "home/macos" }}
-{{ .chezmoi.homeDir }}/Desktop/source/helix/runtime
-{{ else if eq .config "home/macos" -}}
-{{ .chezmoi.homeDir }}/source/helix/runtime
-{{- end }}
+{{ .chezmoi.homeDir }}/{{ .source }}/helix/runtime

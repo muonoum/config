@@ -1,0 +1,14 @@
+#!/opt/homebrew/bin/fish
+
+for dir in ~/Desktop/source/*
+    if string match --quiet '*.skip' $dir
+        continue
+    end
+    echo -n "$(basename $dir): "
+    git -C $dir stash && git -C $dir pull && git -C $dir stash pop
+end
+
+brew update
+
+hx --grammar fetch
+hx --grammar build

@@ -8,14 +8,6 @@ if status is-interactive
     end
     config config --local status.showUntrackedFiles no
 
-    function install-lexical
-        pushd ~/Desktop/source/lexical
-        git pull
-        rm -rf ~/.local/share/lexical
-        mix package --path ~/.local/share/lexical
-        popd
-    end
-
     function install-helix
         pushd ~/Desktop/source/helix
         cargo install --path helix-term --locked
