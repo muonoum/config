@@ -4,8 +4,14 @@ for dir in $HOME/{{ .source }}/*
     if string match --quiet '*.skip' $dir
         continue
     end
+
     echo -n "$(basename $dir): "
-    git -C $dir stash && git -C $dir pull && git -C $dir stash pop
+
+    if git -C $dir diff-files --quiet
+        git -C $dir pull
+    else
+        git -C $dir stash --quiet && git -C $dir pull && git -C $dir stash pop --quiet
+    end
 end
 
 brew update
