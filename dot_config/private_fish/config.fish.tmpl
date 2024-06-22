@@ -3,19 +3,20 @@ if status is-interactive
     set --global fish_pager_color_selected_background --background=4b454b
     set --global fish_greeting
 
-    function config
-        git --git-dir=$HOME/.repo --work-tree=$HOME $argv
-    end
-    config config --local status.showUntrackedFiles no
+    # function config
+    #    git --git-dir=$HOME/.repo --work-tree=$HOME $argv
+    # end
+    #
+    # config config --local status.showUntrackedFiles no
 
     function install-helix
-        pushd ~/Desktop/source/helix
+        pushd $HOME/{{ .source }}/helix
         cargo install --path helix-term --locked
         popd
     end
 
     function install-gleam
-        pushd ~/Desktop/source/gleam
+        pushd $HOME/{{ .source }}/gleam
         make install
         popd
     end
