@@ -7,18 +7,12 @@ name = "javascript"
 auto-format = true
 
 [[language]]
-name = "heex"
+name = "just"
 auto-format = true
 
 [[language]]
-name = "gren"
-scope = "source.gren"
-roots = ["gren.json"]
-file-types = ["gren"]
-comment-token = "--"
-indent = { tab-width = 4, unit = "    " }
-formatter = { command = "gren", args = ["format", "--stdin"] }
-auto-format = false
+name = "heex"
+auto-format = true
 
 [[language]]
 name = "go"
@@ -30,32 +24,35 @@ name = "elixir"
 auto-format = true
 language-servers = ["elixir-ls"]
 
-# [[language]]
-# name = "gleam"
-# language-servers = ["glas"]
+[[language]]
+name = "typescript"
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+auto-format = true
 
 [language-server.typescript-language-server]
 config = { format = { "semicolons" = "insert" } }
 
-[language-server.credo]
-command = "credo-language-server"
-args = ["--stdio=true"]
+# [[grammar]]
+# name = "gleam"
 
-[language-server.nextls]
-command = "nextls"
-args = ["--stdio=true"]
+# [grammar.source]
+# git = "https://github.com/gleam-lang/tree-sitter-gleam"
+# rev = "0d8b4b595daf76ed30c65ab22e01504fa64a1eac"
 
-[language-server.lexical]
-command = "start_lexical.sh"
-args = ["--stdio=true"]
+[[language]]
+name = "scheme"
+formatter = { command = "raco", args = ["fmt", "-i"] }
+auto-format = true
+language-servers = [ "steel-language-server" ]
 
-[language-server.glas]
-command = "glas"
-args = ["--stdio"]
+[language-server.steel-language-server]
+command = "steel-language-server"
+args = []
 
-[[grammar]]
-name = "gleam"
+[[language]]
+name = "rust"
+indent = { tab-width = 2, unit = "  " }
 
-[grammar.source]
-git = "https://github.com/gleam-lang/tree-sitter-gleam"
-rev = "8432ffe32ccd360534837256747beb5b1c82fca1"
+[language-server.rust-analyzer.config]
+check.command = "clippy"
+diagnostics.disabled = ["unlinked-file"]
