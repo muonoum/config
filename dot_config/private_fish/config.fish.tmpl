@@ -21,21 +21,25 @@ if status is-interactive
         popd
     end
 
+    function install-steel
+        pushd $HOME/{{ .source }}/steel
+        cargo xtask install
+        popd
+    end
+
     eval (/opt/homebrew/bin/brew shellenv)
     eval (starship init fish)
 
     fish_add_path $HOME/.cabal/bin
     fish_add_path $HOME/.ghcup/bin
-    fish_add_path $HOME/.cargo/bin
     fish_add_path $(go env GOPATH)/bin
     fish_add_path --prepend /opt/homebrew/bin
-    fish_add_path --prepend /opt/homebrew/opt/ruby/bin
-    fish_add_path --prepend /opt/homebrew/lib/ruby/gems/3.2.0/bin/
     fish_add_path --prepend /opt/homebrew/opt/postgresql@15/bin
-    fish_add_path --prepend /opt/homebrew/opt/node@18/bin
     fish_add_path --prepend /opt/homebrew/opt/make/libexec/gnubin
+    fish_add_path --prepend /opt/homebrew/opt/gnu-sed/libexec/gnubin
     fish_add_path --prepend /opt/homebrew/opt/gnu-tar/libexec/gnubin
-    fish_add_path --prepend $HOME/.local/share/lexical/bin
+    fish_add_path --prepend /opt/homebrew/opt/openjdk/bin
+    fish_add_path --prepend $HOME/.cargo/bin
     fish_add_path --prepend $HOME/.local/bin --move
 
     set --export EDITOR hx
@@ -53,7 +57,6 @@ if status is-interactive
     alias k=kubecolor
     alias mv='mv -v'
     alias cp='cp -v'
-    alias tailscale='/Applications/Tailscale.app/Contents/MacOS/Tailscale'
     alias gl='git log --graph --pretty=oneline --abbrev-commit'
     alias dj='dasel -r json --colour'
     alias cdr='cd $(git rev-parse --show-toplevel)'
