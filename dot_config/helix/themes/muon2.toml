@@ -29,6 +29,7 @@
 
 # "diagnostic" = { bg = "#b6d1d5" }
 "diagnostic" = { bg = "#c6d1d5" }
+# "diagnostic.error" = { bg = "#cdc0ca" } 
 "error" = { fg = "#b91c1c" }
 "hint" = { fg = "slate_gray" }
 "info" = { fg = "slate_gray" }
@@ -56,3 +57,4 @@
 "variable.parameter" = { fg = "#864062" }
 
 [palette]
+slate_gray = "#708090"
