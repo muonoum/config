@@ -11,13 +11,15 @@ mouse = true
 color-modes = true
 auto-completion = false
 idle-timeout = 100
+continue-comments = false
+end-of-line-diagnostics = "disable"
 
 [editor.smart-tab]
 enable = false
 
 [editor.soft-wrap]
 enable = true
-wrap-indicator = " ～ "
+wrap-indicator = " ～"
 
 [editor.indent-guides]
 render = true
@@ -50,6 +52,11 @@ insert = "block"
 normal = "block"
 select = "block"
 
+[editor.inline-diagnostics]
+cursor-line = "disable"
+other-lines = "disable"
+max-diagnostics = 1
+
 [keys.normal]
 # C-f = [":new", ":insert-output lf -selection-path=/dev/stdout", "split_selection_on_newline", "goto_file", "goto_last_modification", "goto_last_modified_file", ":buffer-close!", ":redraw"]
 "A-ret" = ["repeat_last_motion"]
@@ -78,6 +85,7 @@ ret = ["keep_primary_selection", "collapse_selection", "normal_mode"]
 s = ":pipe sort -u"
 
 [keys.normal.'\']
+t = ":pipe sed 's/[ \t]*$//'"
 w = ":toggle soft-wrap.enable"
 A = ":buffer-close-all"
 q = ":buffer-close"
@@ -97,6 +105,8 @@ y = ":pipe yq ea '[.]|sort_by(.name)|.[]|splitDoc'"
 
 [keys.normal.'\'.'\']
 c = ":toggle-option auto-completion"
+f = ":toggle-option auto-format"
+"\\" = ":run-shell-command touch .restart"
 
 [keys.normal.'[']
 "[" = ["goto_prev_function", "align_view_top"]
