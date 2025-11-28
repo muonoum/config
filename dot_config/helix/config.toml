@@ -1,4 +1,4 @@
-theme = "muon2"
+theme = "muon3"
 
 [editor]
 auto-pairs = false
@@ -93,9 +93,8 @@ r = ":reload"
 R = ":config-reload"
 c = ":config-open"
 s = ":pipe sort -u"
-"[" = ":theme muon2"
-"{" = ":theme muon"
-"]" = ":theme tau"
+"[" = ":theme muon3"
+"]" = ":theme tau2"
 "." = ":toggle-option file-picker.git-ignore"
 "z" = ":tree-sitter-highlight-name"
 # TODO: Submeny for pipes
