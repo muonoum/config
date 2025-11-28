@@ -1,0 +1,90 @@
+"ui.window" = { fg = "foreground", bg = "#b8b5ae" }
+"ui.background" = { fg = "foreground", bg = "background" }
+"ui.bufferline" = { fg = "#6b656b", bg = "panel" }
+"ui.bufferline.active" = { fg = "foreground", bg = "panel" }
+"ui.statusline" = { bg = "panel" }
+"ui.statusline.normal" = {}
+"ui.statusline.insert" = { bg = "insert_light" }
+"ui.statusline.select" = { bg = "select_light" }
+"ui.menu" = { fg = "foreground", bg = "panel" }
+"ui.menu.selected" = { fg = "background", bg = "foreground" }
+"ui.popup" = { fg = "foreground", bg = "panel" }
+"ui.selection" =  { bg = "selection" }
+"ui.cursor" = { bg = "normal_light" }
+"ui.cursor.match" = { bg = "#b0bab1" }
+"ui.cursor.primary" = { bg = "normal_light" }
+"ui.cursor.primary.normal" = { bg = "normal_light" }
+"ui.cursor.primary.insert" = { bg = "insert_light" }
+"ui.cursor.primary.select" = { bg = "select_light" }
+"ui.cursorline.primary" = { bg = "#d2cfcd" }
+"ui.cursorline.secondary" = { bg = "#bdcac8" }
+"ui.virtual" = { fg = "virtual" }
+"ui.virtual.wrap" = { fg = "#8f888d" }
+"ui.virtual.indent-guide" = { fg = "soft_virtual" }
+"ui.virtual.whitespace" = { fg = "soft_virtual" }
+"ui.virtual.jump-label" = { fg = "virtual", bg = "selection" }
+
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment.unused" = { fg = "comment", modifiers = [] }
+"constant" = { modifiers = [] }
+"constant.builtin" = { fg = "dark_syntax", modifiers = [] }
+"constant.builtin.boolean" = { fg = "constant" }
+"constant.numeric" = { fg = "constant", modifiers = [] }
+"operator" = { fg = "punctuation", modifiers = [] }
+"punctuation" = { fg = "punctuation", modifiers = [] }
+"string" = { fg = "constant", modifiers = [] }
+
+"keyword" = { fg = "keyword", modifiers = [], underline = { style = "line" } }
+"namespace" = { fg = "light_syntax", modifiers = [] }
+"type" = { fg = "dark_syntax", modifiers = [] }
+"constructor" = { fg = "dark_syntax", modifiers = [] }
+"type.enum.variant.builtin" = { fg = "dark_syntax", modifiers = [] }
+
+"variable" = {}
+"variable.builtin" = {}
+"variable.parameter" = { modifiers = [], underline = {} }
+# "variable.parameter" = { modifiers = ["italic"], underline = {  } }
+# "variable.parameter" = { modifiers = ["bold"], underline = {  } }
+# "variable.parameter" = { modifiers = [], underline = { style = "line" } }
+"variable.other" = {}
+"variable.other.member" = {}
+"variable.other.member.private" = {}
+
+"attribute" = { fg = "virtual" }
+"label" = { modifiers = [], underline = {} }
+# "label" = { modifiers = ["italic"], underline = {} }
+# "label" = { modifiers = ["bold"], underline = {} }
+# "label" = { modifiers = [], underline = { style = "line" } }
+# "label" = { fg = "other_syntax", modifiers = [], underline = {} }
+# "label" = {}
+"function" = {}
+"tag" = {}
+"special" = {}
+"markup" = {}
+"diff" = {}
+
+"diagnostic" = { bg = "#c6d1d5" }
+"error" = { fg = "#b91c1c" }
+"hint" = { fg = "comment" }
+"info" = { fg = "comment" }
+"warning" = { fg = "#a16207" }
+
+[palette]
+panel = "#bcb5b3"
+foreground = "#3b353b"
+background = "#dddad8"
+virtual = "#2f4f4f"
+soft_virtual = "#bfb8bd"
+selection = "#cdc0ca"
+normal_light = "#bdb0ba"
+select_light = "#7da0aa"
+select_dark = "#3d505a"
+insert_light = "#bc9593"
+insert_dark = "#6d404a"
+comment = "#5d6a68"
+punctuation = "#708090"
+keyword = "#09506c"
+constant = "#126880"
+light_syntax = "#904060"
+dark_syntax = "#700020"
+other_syntax = "#700020"
