@@ -7,17 +7,8 @@ name = "javascript"
 auto-format = true
 
 [[language]]
-name = "just"
-auto-format = true
-
-[[language]]
 name = "heex"
 auto-format = true
-
-[[language]]
-name = "go"
-[language.formatter]
-command = "goimports"
 
 [[language]]
 name = "elixir"
@@ -25,19 +16,18 @@ auto-format = true
 language-servers = ["elixir-ls"]
 
 [[language]]
+name = "go"
+
+  [language.formatter]
+  command = "goimports"
+
+[[language]]
 name = "typescript"
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
 auto-format = true
 
-[language-server.typescript-language-server]
-config = { format = { "semicolons" = "insert" } }
-
-# [[grammar]]
-# name = "gleam"
-
-# [grammar.source]
-# git = "https://github.com/gleam-lang/tree-sitter-gleam"
-# rev = "0d8b4b595daf76ed30c65ab22e01504fa64a1eac"
+  [language-server.typescript-language-server]
+  config = { format = { "semicolons" = "insert" } }
 
 [[language]]
 name = "scheme"
@@ -45,14 +35,14 @@ formatter = { command = "raco", args = ["fmt", "-i"] }
 auto-format = true
 language-servers = [ "steel-language-server" ]
 
-[language-server.steel-language-server]
-command = "steel-language-server"
-args = []
+  [language-server.steel-language-server]
+  command = "steel-language-server"
+  args = []
 
 [[language]]
 name = "rust"
 indent = { tab-width = 2, unit = "  " }
 
-[language-server.rust-analyzer.config]
-check.command = "clippy"
-diagnostics.disabled = ["unlinked-file"]
+  [language-server.rust-analyzer.config]
+  check.command = "clippy"
+  diagnostics.disabled = ["unlinked-file"]
