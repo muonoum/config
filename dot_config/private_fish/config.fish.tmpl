@@ -43,7 +43,7 @@ if status is-interactive
     fish_add_path --prepend $HOME/.local/bin --move
 
     set --export EDITOR hx
-    set --export ERL_AFLAGS '-kernel shell_history enabled'
+    set --export ERL_AFLAGS '-kernel shell_history enabled +B'
     set --export GOPATH $HOME/.local/share/go
     set --export KUBECONFIG admin.kubeconfig
     set --export XDG_CONFIG_HOME $HOME/.config
