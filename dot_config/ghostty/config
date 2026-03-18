@@ -1,0 +1,17 @@
+theme = Dark+
+macos-option-as-alt = left
+cursor-color = #bcb5b3
+background = black
+confirm-close-surface = false
+
+font-family = Iosevka Custom Semibold
+font-family-bold = Iosevka Custom ExtraBold
+font-family-italic = Iosevka Custom Semibold Italic
+font-family-bold-italic = Iosevka Custom ExtraBold Italic
+font-thicken = true
+font-thicken-strength = 255
+adjust-font-baseline = 10%
+adjust-cell-height = 10%
+adjust-cell-width = 0
+font-size = 17.0
+font-shaping-break = no-cursor
