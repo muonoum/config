@@ -8,10 +8,14 @@ font-family = Iosevka Custom Semibold
 font-family-bold = Iosevka Custom ExtraBold
 font-family-italic = Iosevka Custom Semibold Italic
 font-family-bold-italic = Iosevka Custom ExtraBold Italic
+
+font-shaping-break = no-cursor
 font-thicken = true
 font-thicken-strength = 255
+
+{{ if eq .machine "mba" -}}
 adjust-font-baseline = 10%
 adjust-cell-height = 10%
 adjust-cell-width = 0
 font-size = 17.0
-font-shaping-break = no-cursor
+{{- end }}
