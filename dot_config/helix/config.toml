@@ -13,6 +13,7 @@ auto-completion = false
 idle-timeout = 100
 continue-comments = false
 end-of-line-diagnostics = "disable"
+text-width = 100
 
 [editor.smart-tab]
 enable = false
@@ -20,6 +21,7 @@ enable = false
 [editor.soft-wrap]
 enable = true
 wrap-indicator = " ～"
+wrap-at-text-width = true
 
 [editor.indent-guides]
 render = true
