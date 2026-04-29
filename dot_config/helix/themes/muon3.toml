@@ -24,7 +24,7 @@
 "ui.virtual.whitespace" = { fg = "soft_virtual" }
 "ui.virtual.jump-label" = { fg = "virtual", bg = "selection" }
 
-"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment" = { fg = "comment", modifiers = [] }
 "comment.unused" = { fg = "comment", modifiers = [] }
 "constant" = { modifiers = [] }
 "constant.builtin" = { fg = "dark_syntax", modifiers = [] }
@@ -51,7 +51,7 @@
 "variable.other.member.private" = {}
 
 "attribute" = { fg = "virtual" }
-"label" = { modifiers = [], underline = {} }
+"label" = { fg = "light_syntax", modifiers = [], underline = {} }
 # "label" = { modifiers = ["italic"], underline = {} }
 # "label" = { modifiers = ["bold"], underline = {} }
 # "label" = { modifiers = [], underline = { style = "line" } }
