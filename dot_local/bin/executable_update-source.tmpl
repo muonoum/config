@@ -13,8 +13,3 @@ for dir in $HOME/{{ .source }}/*
         git -C $dir stash --quiet && git -C $dir pull && git -C $dir stash pop --quiet
     end
 end
-
-brew update
-
-hx --grammar fetch
-hx --grammar build
