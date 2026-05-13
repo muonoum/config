@@ -2,14 +2,29 @@
 all:
 
 .PHONY: update
+update: update-source update-brew
+
+.PHONY: update-source
 update:
 	update-source
+
+.PHONY: update-brew
+update-brew:
 	brew update
 
 .PHONY: upgrade
-upgrade:
+upgrade: upgrade-homebrew upgrade-helix upgrade-gleam
+
+.PHONY: upgrade-homebrew
+upgrade-homebrew:
 	brew upgrade
+
+.PHONY: upgrade-helix
+upgrade-helix:
 	cd $(HOME)/{{ .source }}/helix && cargo install --path helix-term --locked
-	make -C $(HOME)/{{ .source }}/gleam install
 	hx --grammar fetch
 	hx --grammar build
+
+.PHONY: upgrade-gleam
+upgrade-gleam:
+	make -C $(HOME)/{{ .source }}/gleam install
