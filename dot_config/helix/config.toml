@@ -14,6 +14,10 @@ idle-timeout = 100
 continue-comments = false
 end-of-line-diagnostics = "disable"
 text-width = 100
+trim-final-newlines = true
+trim-trailing-whitespace = true
+insert-final-newline = true
+scroll-lines = 2
 
 [editor.smart-tab]
 enable = false
@@ -101,6 +105,9 @@ s = ":pipe sort -u"
 "z" = ":tree-sitter-highlight-name"
 # TODO: Submeny for pipes
 y = ":pipe yq ea '[.]|sort_by(.name)|.[]|splitDoc'"
+
+[keys.normal.'g']
+j = "jump_backward"
 
 [keys.normal.'\'.'\']
 c = ":toggle-option auto-completion"
