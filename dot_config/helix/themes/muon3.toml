@@ -19,6 +19,7 @@
 "ui.cursorline.primary" = { bg = "#d2cfcd" }
 "ui.cursorline.secondary" = { bg = "#bdcac8" }
 "ui.virtual" = { fg = "virtual" }
+"ui.highlight" = { bg = "#d2cfcd" }
 "ui.virtual.wrap" = { fg = "#8f888d" }
 "ui.virtual.indent-guide" = { fg = "soft_virtual" }
 "ui.virtual.whitespace" = { fg = "soft_virtual" }
@@ -50,7 +51,7 @@
 "variable.other.member" = {}
 "variable.other.member.private" = {}
 
-"attribute" = { fg = "virtual" }
+"attribute" = { fg = "virtual", modifiers = [], underline = { }}
 "label" = { fg = "light_syntax", modifiers = [], underline = {} }
 # "label" = { modifiers = ["italic"], underline = {} }
 # "label" = { modifiers = ["bold"], underline = {} }
