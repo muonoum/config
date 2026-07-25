@@ -46,6 +46,7 @@ tabpad = "-"
 
 [editor.lsp]
 auto-signature-help = false
+auto-document-highlight = true
 display-messages = true
 
 [editor.statusline]
@@ -102,7 +103,7 @@ s = ":pipe sort -u"
 "[" = ":theme muon3"
 "]" = ":theme tau2"
 "." = ":toggle-option file-picker.git-ignore"
-"z" = ":tree-sitter-highlight-name"
+"?" = ":tree-sitter-highlight-name"
 # TODO: Submeny for pipes
 y = ":pipe yq ea '[.]|sort_by(.name)|.[]|splitDoc'"
 
