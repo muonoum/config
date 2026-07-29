@@ -44,20 +44,12 @@
 "variable" = {}
 "variable.builtin" = {}
 "variable.parameter" = { modifiers = [], underline = {} }
-# "variable.parameter" = { modifiers = ["italic"], underline = {  } }
-# "variable.parameter" = { modifiers = ["bold"], underline = {  } }
-# "variable.parameter" = { modifiers = [], underline = { style = "line" } }
 "variable.other" = {}
 "variable.other.member" = {}
 "variable.other.member.private" = {}
 
 "attribute" = { fg = "virtual", modifiers = [], underline = { }}
 "label" = { fg = "light_syntax", modifiers = [], underline = {} }
-# "label" = { modifiers = ["italic"], underline = {} }
-# "label" = { modifiers = ["bold"], underline = {} }
-# "label" = { modifiers = [], underline = { style = "line" } }
-# "label" = { fg = "other_syntax", modifiers = [], underline = {} }
-# "label" = {}
 "function" = {}
 "tag" = {}
 "special" = {}
